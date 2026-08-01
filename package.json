@@ -1,0 +1,16 @@
+{
+  "name": "job-radar",
+  "version": "1.0.0",
+  "description": "Daily filtered job feed for Andy — Admin/EA/Ops/Customer Service roles",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/run.js"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "open": "^11.0.0"
+  }
+}

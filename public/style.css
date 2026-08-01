@@ -1,0 +1,217 @@
+:root {
+  --ink: #1B2430;
+  --paper: #EDE7D9;
+  --paper-raised: #F5F1E6;
+  --ledger-line: #C9C2AE;
+  --stamp-red: #A63D40;
+  --slate: #5C6B73;
+  --ochre: #B08D57;
+  --font-display: 'Bitter', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-ui: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  min-height: 100vh;
+}
+
+.manifest-header {
+  padding: 28px 20px 20px;
+  border-bottom: 2px solid var(--ink);
+  background: var(--paper-raised);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--slate);
+  margin-bottom: 8px;
+}
+
+.eyebrow { font-weight: 500; }
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 34px;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.header-meta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--slate);
+}
+
+.divider { margin: 0 8px; opacity: 0.5; }
+
+.ledger {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+}
+
+.entry {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding: 18px 16px 18px 0;
+  border-bottom: 1px solid var(--ledger-line);
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.entry.actioned {
+  opacity: 0.55;
+}
+
+.entry-number {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--slate);
+  width: 28px;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+.entry-title a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.entry-title a:hover,
+.entry-title a:focus-visible {
+  border-bottom-color: var(--ink);
+}
+
+.entry-meta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--slate);
+  margin-bottom: 12px;
+}
+
+.entry-source {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate);
+  border: 1px solid var(--ledger-line);
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 8px;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.entry-actions button {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 3px;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.entry-actions button:hover { transform: translateY(-1px); }
+.entry-actions button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.entry-actions button.apply:hover,
+.entry-actions button.apply.active {
+  background: var(--stamp-red);
+  border-color: var(--stamp-red);
+  color: white;
+}
+
+.entry-actions button.saved:hover,
+.entry-actions button.saved.active {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: white;
+}
+
+.entry-actions button.skip:hover,
+.entry-actions button.skip.active {
+  background: var(--slate);
+  border-color: var(--slate);
+  color: white;
+}
+
+/* Signature element: ink-stamp mark on actioned entries */
+.stamp {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  transform: rotate(-8deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.entry.actioned .stamp {
+  opacity: 0.85;
+  transform: rotate(-8deg) scale(1);
+}
+
+.stamp.apply { color: var(--stamp-red); }
+.stamp.skip { color: var(--slate); }
+.stamp.saved { color: var(--ochre); }
+
+.manifest-footer {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--slate);
+  padding: 24px 16px 40px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--slate);
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry, .stamp, .entry-actions button { transition: none; }
+}

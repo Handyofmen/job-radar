@@ -1,0 +1,25 @@
+{
+  "jooble": {
+    "apiKey": "89e01b1c-1b6f-4f74-a0bb-f8e12d922af8",
+    "endpoint": "https://jooble.org/api/"
+  },
+  "adzuna": {
+    "appId": "b4367117",
+    "appKey": "b09e452ca511e425f1165f0930296d3b",
+    "country": "gb",
+    "note": "Adzuna has no Nigeria index yet — 'gb' surfaces UK/remote roles"
+  },
+  "remotive": {
+    "endpoint": "https://remotive.com/api/remote-jobs"
+  },
+  "remoteok": {
+    "endpoint": "https://remoteok.com/api"
+  },
+  "gmail": {
+    "clientId": "75492365829-psgj1n57mj5dkjoru2ie9nbardtpjsin.apps.googleusercontent.com",
+    "clientSecret": "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",
+    "refreshToken": "YOUR_REFRESH_TOKEN",
+    "labelsToScan": ["Jobberman", "LinkedIn", "Jooble", "Glassdoor", "MyJobMag", "Indeed"],
+    "processedLabel": "Processed"
+  }
+}

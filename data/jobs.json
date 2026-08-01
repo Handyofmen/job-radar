@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-07-29T09:00:00.000Z",
+  "count": 3,
+  "jobs": [
+    {
+      "id": 1,
+      "status": "new",
+      "title": "Executive Assistant to Managing Director",
+      "company": "Sample Logistics Co.",
+      "location": "Lagos, Nigeria (Hybrid)",
+      "link": "https://example.com/job/1",
+      "source": "Jooble",
+      "postedAt": "2026-07-28T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "status": "new",
+      "title": "Customer Support Specialist",
+      "company": "Remote CS Team",
+      "location": "Remote",
+      "link": "https://example.com/job/2",
+      "source": "Remotive",
+      "postedAt": "2026-07-28T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "Sample FMCG Ltd.",
+      "location": "Lagos, Nigeria (On-site)",
+      "link": "https://example.com/job/3",
+      "source": "MyJobMag",
+      "postedAt": "2026-07-27T00:00:00.000Z"
+    }
+  ]
+}

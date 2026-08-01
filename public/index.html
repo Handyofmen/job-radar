@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Radar — Daily Manifest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="manifest-header">
+    <div class="header-top">
+      <span class="eyebrow">DAILY MANIFEST</span>
+      <span class="entry-count" id="entryCount">— items</span>
+    </div>
+    <h1>Job Radar</h1>
+    <div class="header-meta">
+      <span id="generatedAt">Generated —</span>
+      <span class="divider">·</span>
+      <span id="pendingCount">— pending review</span>
+    </div>
+  </header>
+
+  <main class="ledger" id="ledger">
+    <!-- job rows injected here -->
+  </main>
+
+  <footer class="manifest-footer">
+    <p>Sources are logged, not guaranteed. Verify each listing before applying.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
