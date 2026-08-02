@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
+import { sources } from "./config-loader.js";
 
-const sources = JSON.parse(fs.readFileSync("./config/sources.json", "utf-8"));
 const filters = JSON.parse(fs.readFileSync("./config/filters.json", "utf-8"));
 
 /**
@@ -11,7 +11,7 @@ const filters = JSON.parse(fs.readFileSync("./config/filters.json", "utf-8"));
 
 async function fetchJooble() {
   const { apiKey, endpoint } = sources.jooble;
-  if (!apiKey || apiKey.startsWith("YOUR_")) return [];
+  if (!apiKey) return [];
 
   const results = [];
   for (const title of filters.includeTitles) {
@@ -68,7 +68,7 @@ async function fetchRemoteOK() {
 
 async function fetchAdzuna() {
   const { appId, appKey, country } = sources.adzuna;
-  if (!appId || appId.startsWith("YOUR_")) return [];
+  if (!appId) return [];
 
   const results = [];
   for (const title of filters.includeTitles) {

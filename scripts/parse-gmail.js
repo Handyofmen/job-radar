@@ -1,7 +1,6 @@
 import { google } from "googleapis";
-import fs from "fs";
+import { sources } from "./config-loader.js";
 
-const sources = JSON.parse(fs.readFileSync("./config/sources.json", "utf-8"));
 const { clientId, clientSecret, refreshToken, labelsToScan, processedLabel } = sources.gmail;
 
 function getGmailClient() {
@@ -61,7 +60,7 @@ function parseJobsFromHtml(html, source) {
 }
 
 export async function fetchAndParseGmailAlerts() {
-  if (!clientId || clientId.startsWith("YOUR_")) return [];
+  if (!clientId) return [];
 
   const gmail = getGmailClient();
   const processedLabelId = await ensureProcessedLabelId(gmail);
