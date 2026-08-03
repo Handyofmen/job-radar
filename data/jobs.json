@@ -1,36 +1,156 @@
 {
-  "generatedAt": "2026-08-03T03:03:22.020Z",
-  "count": 3,
+  "generatedAt": "2026-08-03T03:34:51.858Z",
+  "count": 15,
   "jobs": [
     {
       "id": 1,
       "status": "new",
-      "title": "Licensed Customer Service Representative",
-      "company": "Liberty Mutual Insurance",
-      "location": "Remote",
-      "link": "https://remoteOK.com/remote-jobs/remote-licensed-customer-service-representative-liberty-mutual-insurance-1135788",
-      "source": "RemoteOK",
-      "postedAt": "2026-08-01T16:00:06+00:00"
+      "title": "Office Administrator",
+      "company": "Superior Fence",
+      "location": "North Carolina",
+      "link": "https://jooble.org/jdp/-331087134795154234",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T19:27:37.5200000"
     },
     {
       "id": 2,
       "status": "new",
-      "title": "Entry Level Virtual Assistant $14 $18 hour",
-      "company": "Filipino Contractors",
-      "location": "North Miami Beach, ",
-      "link": "https://remoteOK.com/remote-jobs/remote-entry-level-virtual-assistant-14-18-hour-filipino-contractors-1135742",
-      "source": "RemoteOK",
-      "postedAt": "2026-07-31T12:46:47+00:00"
+      "title": "Office Administrator",
+      "company": "The Suddath Companies",
+      "location": "Lubbock, TX",
+      "link": "https://jooble.org/jdp/5179644554651808874",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T19:27:36.3900000"
     },
     {
       "id": 3,
       "status": "new",
-      "title": "Administrative Assistant",
-      "company": "Viable Medical Solutions",
-      "location": "Greater Orlando",
-      "link": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-viable-medical-solutions-1135697",
-      "source": "RemoteOK",
-      "postedAt": "2026-07-30T15:59:26+00:00"
+      "title": "Office Administrator",
+      "company": "Bridges Of America",
+      "location": "Jacksonville, FL",
+      "link": "https://jooble.org/jdp/5478913421660028252",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T19:27:35.6330000"
+    },
+    {
+      "id": 4,
+      "status": "new",
+      "title": "Office Administrator",
+      "company": "Trillium Engineering",
+      "location": "Addison, TX",
+      "link": "https://jooble.org/jdp/-2151959427653376375",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T19:27:35.6130000"
+    },
+    {
+      "id": 5,
+      "status": "new",
+      "title": "Office Manager",
+      "company": "G1 Search",
+      "location": "Lisburn, Northern Ireland",
+      "link": "https://www.adzuna.co.uk/jobs/land/ad/5825715028?se=XlZHReyO8RG8JMyxbRrc7Q&utm_medium=api&utm_source=b4367117&v=8BAE3C5D67D5070A31CE0DBA1FD87AC10ACF8256",
+      "source": "Adzuna",
+      "postedAt": "2026-08-02T14:44:09Z"
+    },
+    {
+      "id": 6,
+      "status": "new",
+      "title": "Admin Officer",
+      "company": "Brook Street UK",
+      "location": "Mill Meece, Stafford",
+      "link": "https://www.adzuna.co.uk/jobs/land/ad/5825564136?se=UtaDROyO8RGxbcV7lT4hQw&utm_medium=api&utm_source=b4367117&v=BEE7B65BFC339CD58EFC6E7319A096420A462F1F",
+      "source": "Adzuna",
+      "postedAt": "2026-08-02T11:17:28Z"
+    },
+    {
+      "id": 7,
+      "status": "new",
+      "title": "Customer Success Manager",
+      "company": "TEAM",
+      "location": "Toxteth, Liverpool",
+      "link": "https://www.adzuna.co.uk/jobs/land/ad/5825564013?se=bFXARuyO8RGzy-zrmR343g&utm_medium=api&utm_source=b4367117&v=4BD955D6C4FEDE5E948B5E2F920DDE67847FF438",
+      "source": "Adzuna",
+      "postedAt": "2026-08-02T11:17:13Z"
+    },
+    {
+      "id": 8,
+      "status": "new",
+      "title": "Office Admin Assistant",
+      "company": "Car Guys",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-409040208670725413",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T10:47:55.1700000"
+    },
+    {
+      "id": 9,
+      "status": "new",
+      "title": "Administrative Coordinator",
+      "company": "S R INTERNATIONAL INC",
+      "location": "Phoenix, AZ",
+      "link": "https://jooble.org/jdp/-1691508772203762351",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T08:49:31.2900000"
+    },
+    {
+      "id": 10,
+      "status": "new",
+      "title": "Lead Executive Assistant",
+      "company": "KP Snacks",
+      "location": "Chalvey, Slough",
+      "link": "https://www.adzuna.co.uk/jobs/land/ad/5825368532?se=WoBxReyO8RGzy-zrmR343g&utm_medium=api&utm_source=b4367117&v=9CF855C3EC1383522D39934F5B437E43C8658D1C",
+      "source": "Adzuna",
+      "postedAt": "2026-08-02T06:34:20Z"
+    },
+    {
+      "id": 11,
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "Securitas Security Services USA, Inc.",
+      "location": "Sterling, VA",
+      "link": "https://jooble.org/jdp/-4711848896270031769",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T00:00:00.0000000"
+    },
+    {
+      "id": 12,
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "National Park Service",
+      "location": "Springdale, UT",
+      "link": "https://jooble.org/jdp/-5358876153275514874",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T00:00:00.0000000"
+    },
+    {
+      "id": 13,
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "UBS",
+      "location": "Seattle, WA",
+      "link": "https://jooble.org/jdp/1954041905341982297",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T00:00:00.0000000"
+    },
+    {
+      "id": 14,
+      "status": "new",
+      "title": "Administrative Officer 2",
+      "company": "UCSF Health",
+      "location": "San Francisco, CA",
+      "link": "https://jooble.org/jdp/-1506335365186711792",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T00:00:00.0000000"
+    },
+    {
+      "id": 15,
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "Drug Enforcement Administration",
+      "location": "Fort Worth, TX",
+      "link": "https://jooble.org/jdp/-3430203205594730498",
+      "source": "Jooble",
+      "postedAt": "2026-08-02T00:00:00.0000000"
     }
   ]
 }
