@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-07-29T09:00:00.000Z",
+  "generatedAt": "2026-08-03T03:03:22.020Z",
   "count": 3,
   "jobs": [
     {
       "id": 1,
       "status": "new",
-      "title": "Executive Assistant to Managing Director",
-      "company": "Sample Logistics Co.",
-      "location": "Lagos, Nigeria (Hybrid)",
-      "link": "https://example.com/job/1",
-      "source": "Jooble",
-      "postedAt": "2026-07-28T00:00:00.000Z"
+      "title": "Licensed Customer Service Representative",
+      "company": "Liberty Mutual Insurance",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-licensed-customer-service-representative-liberty-mutual-insurance-1135788",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-01T16:00:06+00:00"
     },
     {
       "id": 2,
       "status": "new",
-      "title": "Customer Support Specialist",
-      "company": "Remote CS Team",
-      "location": "Remote",
-      "link": "https://example.com/job/2",
-      "source": "Remotive",
-      "postedAt": "2026-07-28T00:00:00.000Z"
+      "title": "Entry Level Virtual Assistant $14 $18 hour",
+      "company": "Filipino Contractors",
+      "location": "North Miami Beach, ",
+      "link": "https://remoteOK.com/remote-jobs/remote-entry-level-virtual-assistant-14-18-hour-filipino-contractors-1135742",
+      "source": "RemoteOK",
+      "postedAt": "2026-07-31T12:46:47+00:00"
     },
     {
       "id": 3,
       "status": "new",
-      "title": "Administrative Officer",
-      "company": "Sample FMCG Ltd.",
-      "location": "Lagos, Nigeria (On-site)",
-      "link": "https://example.com/job/3",
-      "source": "MyJobMag",
-      "postedAt": "2026-07-27T00:00:00.000Z"
+      "title": "Administrative Assistant",
+      "company": "Viable Medical Solutions",
+      "location": "Greater Orlando",
+      "link": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-viable-medical-solutions-1135697",
+      "source": "RemoteOK",
+      "postedAt": "2026-07-30T15:59:26+00:00"
     }
   ]
 }
