@@ -15,10 +15,12 @@ async function fetchJooble() {
 
   const results = [];
   for (const title of filters.includeTitles) {
+    // No location filter — Jooble's Nigeria-specific index is thin, so an
+    // empty location searches broadly and includes remote-tagged listings
     const res = await fetch(`${endpoint}${apiKey}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ keywords: title, location: "Nigeria" })
+      body: JSON.stringify({ keywords: title, location: "" })
     });
     const data = await res.json();
     (data.jobs || []).forEach(j => {
@@ -37,16 +39,25 @@ async function fetchJooble() {
 
 async function fetchRemotive() {
   const { endpoint } = sources.remotive;
-  const res = await fetch(`${endpoint}?category=customer-support`);
-  const data = await res.json();
-  return (data.jobs || []).map(j => ({
-    title: j.title,
-    company: j.company_name,
-    location: j.candidate_required_location || "Remote",
-    link: j.url,
-    source: "Remotive",
-    postedAt: j.publication_date
-  }));
+  const results = [];
+
+  for (const title of filters.includeTitles) {
+    // Remotive's search param looks across all categories, not just one —
+    // previously this was locked to "customer-support" and missed admin/EA roles entirely
+    const res = await fetch(`${endpoint}?search=${encodeURIComponent(title)}`);
+    const data = await res.json();
+    (data.jobs || []).forEach(j => {
+      results.push({
+        title: j.title,
+        company: j.company_name,
+        location: j.candidate_required_location || "Remote",
+        link: j.url,
+        source: "Remotive",
+        postedAt: j.publication_date
+      });
+    });
+  }
+  return results;
 }
 
 async function fetchRemoteOK() {
@@ -72,7 +83,9 @@ async function fetchAdzuna() {
 
   const results = [];
   for (const title of filters.includeTitles) {
-    const url = `https://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=${appId}&app_key=${appKey}&what=${encodeURIComponent(title)}&where=remote`;
+    // Removed "where=remote" — Adzuna's `where` expects a real place name,
+    // not the word "remote", so this was silently returning near-nothing before
+    const url = `https://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=${appId}&app_key=${appKey}&what=${encodeURIComponent(title)}`;
     const res = await fetch(url);
     const data = await res.json();
     (data.results || []).forEach(j => {

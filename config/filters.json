@@ -2,15 +2,22 @@
   "includeTitles": [
     "administrative officer",
     "admin officer",
-    "executive assistant",
-    "virtual assistant",
+    "administrative assistant",
+    "admin assistant",
+    "office administrator",
+    "administrative coordinator",
     "office manager",
+    "executive assistant",
+    "personal assistant",
+    "virtual assistant",
     "operations officer",
     "operations coordinator",
+    "operations assistant",
     "customer service",
+    "customer support",
     "customer success",
     "client support",
-    "administrative assistant"
+    "client service"
   ],
   "excludeTitles": [
     "developer",
