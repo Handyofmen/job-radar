@@ -1,9 +1,29 @@
 {
-  "generatedAt": "2026-08-04T02:33:07.122Z",
+  "generatedAt": "2026-08-04T09:20:09.071Z",
   "count": 15,
   "jobs": [
     {
       "id": 1,
+      "status": "new",
+      "title": "Customer Service Representative",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4448150944/?trackingId=g3g73QlLu47OLNJntKoc6A%3D%3D&amp;refId=73bsQIxc4MfqvgRyNvXi4Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BGI5IluytRPCoo%2FQ5jcYkmw%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3FLs43Z10kaso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4448150944_ssid_5047847097_fmid_9tg252~msee170w~mt&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4448150944_ssid_5047847097_fmid_9tg252~msee170w~mt-null-9tg252~msee170w~mt-null-null&amp;eid=9tg252-msee170w-mt&amp;otpToken=MTkyM2U3YjI3ZTU0MmRmNTM3NTI4NWI2NTc4NTRmYjA4NmNhNGQxNDEwZWEzNmZmN2E0ZGE4ZTdiMGVmZWM2ODRmN2NjN2FkZmYyMzI0MzA5M2VjNWUwMWY4MWRlZWE3YTdjNDgyZDk5MzhiMDkwMjM1M2M4M2VkMjRjMWVhNGJiMTU1MWFiZTEyMDU4OGE0LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-04T08:20:14.000Z"
+    },
+    {
+      "id": 2,
+      "status": "new",
+      "title": "Client Services Consultant Manager",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=ab19d50bcb5ef9f3&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRu04AGqDAFVbB6f4E_CScrsJF7uR-fKNEyL18SO83RTkk&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1jv5obg44gra5800&alid=6a51a1de1cdeec736b12b7c2&bb=3uZ_ZSgBLfJK2OJwGngYcCzG1y4A__pR2EYwqhq8T0LVXdDOKO3jkHGi0v42mO78J0El4pKmEJv9hnrgN9rJ2Ia8kY1ZBa64tJoDYHccH34Dp3x10G-YPjnU9QGJgX2e2C7-0V3AuT_Lo6d_VfsueA%3D%3D&tmtk=1jv5obg44gra5800",
+      "source": "Indeed",
+      "postedAt": "2026-08-04T06:46:08.000Z"
+    },
+    {
+      "id": 3,
       "status": "new",
       "title": "Admin and Operations officer- Maternity Leave Cover",
       "company": "Jdc",
@@ -13,7 +33,7 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 2,
+      "id": 4,
       "status": "new",
       "title": "Licensed Customer Service Representative",
       "company": "Liberty Mutual Insurance",
@@ -23,7 +43,17 @@
       "postedAt": "2026-08-01T16:00:06+00:00"
     },
     {
-      "id": 3,
+      "id": 5,
+      "status": "new",
+      "title": "No Experience Needed – Remote Customer Service Rep",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4447905263/?trackingId=G7AJthkZZZ8ahXD9N85jjw%3D%3D&amp;refId=73bsQIxc4MfqvgRyNvXi4Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BGI5IluytRPCoo%2FQ5jcYkmw%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3FLs43Z10kaso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4447905263_ssid_5047847097_fmid_9tg252~msee170w~mt&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4447905263_ssid_5047847097_fmid_9tg252~msee170w~mt-null-9tg252~msee170w~mt-null-null&amp;eid=9tg252-msee170w-mt&amp;otpToken=MTkyM2U3YjI3ZTU0MmRmNTM3NTI4NWI2NTc4NTRmYjA4NmNhNGQxNDEwZWEzNmZmN2E0ZGE4ZTdiMGVmZWM2ODRmN2NjN2FkZmYyMzI0MzA5M2VjNWUwMWY4MWRlZWE3YTdjNDgyZDk5MzhiMDkwMjM1M2M4M2VkMjRjMWVhNGJiMTU1MWFiZTEyMDU4OGE0LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-04T08:20:14.000Z"
+    },
+    {
+      "id": 6,
       "status": "new",
       "title": "Business Development and Admin Officer (Guam)",
       "company": "Planate Management Group",
@@ -33,17 +63,37 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 4,
+      "id": 7,
+      "status": "new",
+      "title": "No Experience Needed – WFH Customer Service",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4447917010/?trackingId=seRBD4TyP%2FBNSmsyHhH8cQ%3D%3D&amp;refId=73bsQIxc4MfqvgRyNvXi4Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BGI5IluytRPCoo%2FQ5jcYkmw%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3FLs43Z10kaso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4447917010_ssid_5047847097_fmid_9tg252~msee170w~mt&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4447917010_ssid_5047847097_fmid_9tg252~msee170w~mt-null-9tg252~msee170w~mt-null-null&amp;eid=9tg252-msee170w-mt&amp;otpToken=MTkyM2U3YjI3ZTU0MmRmNTM3NTI4NWI2NTc4NTRmYjA4NmNhNGQxNDEwZWEzNmZmN2E0ZGE4ZTdiMGVmZWM2ODRmN2NjN2FkZmYyMzI0MzA5M2VjNWUwMWY4MWRlZWE3YTdjNDgyZDk5MzhiMDkwMjM1M2M4M2VkMjRjMWVhNGJiMTU1MWFiZTEyMDU4OGE0LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-04T08:20:14.000Z"
+    },
+    {
+      "id": 8,
       "status": "new",
       "title": "Office Manager / Administrative Coordinator",
-      "company": "Sir Speedy #20030",
+      "company": "Sir Speedy, Inc.",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-9143198744220850806",
+      "link": "https://jooble.org/jdp/4379802216926535277",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 5,
+      "id": 9,
+      "status": "new",
+      "title": "Customer Service Representative - WFH",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4447895835/?trackingId=Lk%2FoidglNSCek4%2FICE4DFQ%3D%3D&amp;refId=73bsQIxc4MfqvgRyNvXi4Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BGI5IluytRPCoo%2FQ5jcYkmw%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3FLs43Z10kaso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4447895835_ssid_5047847097_fmid_9tg252~msee170w~mt&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4447895835_ssid_5047847097_fmid_9tg252~msee170w~mt-null-9tg252~msee170w~mt-null-null&amp;eid=9tg252-msee170w-mt&amp;otpToken=MTkyM2U3YjI3ZTU0MmRmNTM3NTI4NWI2NTc4NTRmYjA4NmNhNGQxNDEwZWEzNmZmN2E0ZGE4ZTdiMGVmZWM2ODRmN2NjN2FkZmYyMzI0MzA5M2VjNWUwMWY4MWRlZWE3YTdjNDgyZDk5MzhiMDkwMjM1M2M4M2VkMjRjMWVhNGJiMTU1MWFiZTEyMDU4OGE0LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-04T08:20:14.000Z"
+    },
+    {
+      "id": 10,
       "status": "new",
       "title": "Office Manager/Logistics/Admin Assistant",
       "company": "Le'fant Llc",
@@ -53,67 +103,7 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 6,
-      "status": "new",
-      "title": "Sr. Executive Admin Assistant",
-      "company": "Fleet Farm Careers",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/39886990841404439",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 7,
-      "status": "new",
-      "title": "[Hybrid] Korean Bilingual Executive Admin Assistant (15781-2)",
-      "company": "Jnd-inc",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-3969531041674499065",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 8,
-      "status": "new",
-      "title": "Executive Admin Assistant",
-      "company": "Cook Systems",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/1002059786362571817",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 9,
-      "status": "new",
-      "title": "[Hybrid] Korean Bilingual Executive Admin Assistant (15820-1)",
-      "company": "Jnd-inc",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-973402707412343799",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 10,
-      "status": "new",
-      "title": "Executive Admin Assistant 3 - Korean/English bilingual",
-      "company": "Vtekis Consulting Llp",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-8177815715122230966",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
       "id": 11,
-      "status": "new",
-      "title": "Executive Assistant/ Admin Assistant II",
-      "company": "Mindlance",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-2987296984307611702",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 12,
       "status": "new",
       "title": "Executive Admin Assistant",
       "company": "Integrated Resources Inc.",
@@ -123,32 +113,42 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
+      "id": 12,
+      "status": "new",
+      "title": "Executive Admin Assistant",
+      "company": "Cook Systems",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/1002059786362571817",
+      "source": "Jooble",
+      "postedAt": "2026-08-03T00:00:00.0000000"
+    },
+    {
       "id": 13,
       "status": "new",
-      "title": "Experienced Office Admin Assistant",
-      "company": "Liquid Brand",
+      "title": "Executive Admin Assistant 3 - Korean/English bilingual",
+      "company": "Vtekis Consulting Llp",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/5053299233340752524",
+      "link": "https://jooble.org/jdp/-8177815715122230966",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
       "id": 14,
       "status": "new",
-      "title": "Office Admin Assistant",
-      "company": "Car Guys",
+      "title": "Sr. Executive Admin Assistant",
+      "company": "Fleet Farm Careers",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-409040208670725413",
+      "link": "https://jooble.org/jdp/39886990841404439",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
       "id": 15,
       "status": "new",
-      "title": "Office Manager / Administrative Coordinator",
-      "company": "Sir Speedy, Inc.",
+      "title": "Executive Assistant/ Admin Assistant II",
+      "company": "Mindlance",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/4379802216926535277",
+      "link": "https://jooble.org/jdp/-2987296984307611702",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     }
