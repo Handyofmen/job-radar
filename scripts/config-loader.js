@@ -18,8 +18,7 @@ export const sources = {
   },
   adzuna: {
     appId: process.env.ADZUNA_APP_ID || fileConfig.adzuna?.appId || "",
-    appKey: process.env.ADZUNA_APP_KEY || fileConfig.adzuna?.appKey || "",
-    country: fileConfig.adzuna?.country || "gb"
+    appKey: process.env.ADZUNA_APP_KEY || fileConfig.adzuna?.appKey || ""
   },
   remotive: {
     endpoint: fileConfig.remotive?.endpoint || "https://remotive.com/api/remote-jobs"

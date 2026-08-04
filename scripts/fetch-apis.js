@@ -78,26 +78,30 @@ async function fetchRemoteOK() {
 }
 
 async function fetchAdzuna() {
-  const { appId, appKey, country } = sources.adzuna;
+  const { appId, appKey } = sources.adzuna;
   if (!appId) return [];
 
+  // Adzuna has no Nigeria index, so we search the two indexes most likely
+  // to carry genuinely remote-friendly listings instead of relying on one
+  const countries = ["us", "gb"];
   const results = [];
-  for (const title of filters.includeTitles) {
-    // Removed "where=remote" — Adzuna's `where` expects a real place name,
-    // not the word "remote", so this was silently returning near-nothing before
-    const url = `https://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=${appId}&app_key=${appKey}&what=${encodeURIComponent(title)}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    (data.results || []).forEach(j => {
-      results.push({
-        title: j.title,
-        company: j.company?.display_name || "Unknown",
-        location: j.location?.display_name || "Not specified",
-        link: j.redirect_url,
-        source: "Adzuna",
-        postedAt: j.created
+
+  for (const country of countries) {
+    for (const title of filters.includeTitles) {
+      const url = `https://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=${appId}&app_key=${appKey}&what=${encodeURIComponent(title)}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      (data.results || []).forEach(j => {
+        results.push({
+          title: j.title,
+          company: j.company?.display_name || "Unknown",
+          location: j.location?.display_name || "Not specified",
+          link: j.redirect_url,
+          source: "Adzuna",
+          postedAt: j.created
+        });
       });
-    });
+    }
   }
   return results;
 }

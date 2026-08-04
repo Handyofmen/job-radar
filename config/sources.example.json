@@ -6,8 +6,7 @@
   "adzuna": {
     "appId": "YOUR_ADZUNA_APP_ID",
     "appKey": "YOUR_ADZUNA_APP_KEY",
-    "country": "gb",
-    "note": "Adzuna has no Nigeria index yet — 'gb' surfaces UK/remote roles"
+    "note": "Adzuna has no Nigeria index \u2014 searches both us and gb indexes"
   },
   "remotive": {
     "endpoint": "https://remotive.com/api/remote-jobs"
