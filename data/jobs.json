@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T02:07:30.706Z",
+  "generatedAt": "2026-08-04T02:33:07.122Z",
   "count": 15,
   "jobs": [
     {
@@ -15,25 +15,35 @@
     {
       "id": 2,
       "status": "new",
-      "title": "Business Development and Admin Officer (Guam)",
-      "company": "Planate Management Group",
+      "title": "Licensed Customer Service Representative",
+      "company": "Liberty Mutual Insurance",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-6830749798427856870",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
+      "link": "https://remoteOK.com/remote-jobs/remote-licensed-customer-service-representative-liberty-mutual-insurance-1135788",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-01T16:00:06+00:00"
     },
     {
       "id": 3,
       "status": "new",
-      "title": "Office Manager / Administrative Coordinator",
-      "company": "Sir Speedy, Inc.",
+      "title": "Business Development and Admin Officer (Guam)",
+      "company": "Planate Management Group",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/4379802216926535277",
+      "link": "https://jooble.org/jdp/6399097605486069664",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
       "id": 4,
+      "status": "new",
+      "title": "Office Manager / Administrative Coordinator",
+      "company": "Sir Speedy #20030",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-9143198744220850806",
+      "source": "Jooble",
+      "postedAt": "2026-08-03T00:00:00.0000000"
+    },
+    {
+      "id": 5,
       "status": "new",
       "title": "Office Manager/Logistics/Admin Assistant",
       "company": "Le'fant Llc",
@@ -43,7 +53,27 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 5,
+      "id": 6,
+      "status": "new",
+      "title": "Sr. Executive Admin Assistant",
+      "company": "Fleet Farm Careers",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/39886990841404439",
+      "source": "Jooble",
+      "postedAt": "2026-08-03T00:00:00.0000000"
+    },
+    {
+      "id": 7,
+      "status": "new",
+      "title": "[Hybrid] Korean Bilingual Executive Admin Assistant (15781-2)",
+      "company": "Jnd-inc",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-3969531041674499065",
+      "source": "Jooble",
+      "postedAt": "2026-08-03T00:00:00.0000000"
+    },
+    {
+      "id": 8,
       "status": "new",
       "title": "Executive Admin Assistant",
       "company": "Cook Systems",
@@ -53,7 +83,7 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 6,
+      "id": 9,
       "status": "new",
       "title": "[Hybrid] Korean Bilingual Executive Admin Assistant (15820-1)",
       "company": "Jnd-inc",
@@ -63,42 +93,12 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 7,
+      "id": 10,
       "status": "new",
       "title": "Executive Admin Assistant 3 - Korean/English bilingual",
       "company": "Vtekis Consulting Llp",
       "location": "Remote",
       "link": "https://jooble.org/jdp/-8177815715122230966",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 8,
-      "status": "new",
-      "title": "Executive Admin Assistant",
-      "company": "Integrated Resources Inc.",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-532064238986404215",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 9,
-      "status": "new",
-      "title": "[Hybrid] Korean Bilingual Executive Admin Assistant (16024-2)",
-      "company": "Jnd-inc",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/970125426838430565",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
-      "id": 10,
-      "status": "new",
-      "title": "Sr. Executive Admin Assistant",
-      "company": "Fleet Farm Careers",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/39886990841404439",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
@@ -115,6 +115,16 @@
     {
       "id": 12,
       "status": "new",
+      "title": "Executive Admin Assistant",
+      "company": "Integrated Resources Inc.",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-532064238986404215",
+      "source": "Jooble",
+      "postedAt": "2026-08-03T00:00:00.0000000"
+    },
+    {
+      "id": 13,
+      "status": "new",
       "title": "Experienced Office Admin Assistant",
       "company": "Liquid Brand",
       "location": "Remote",
@@ -123,7 +133,7 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 13,
+      "id": 14,
       "status": "new",
       "title": "Office Admin Assistant",
       "company": "Car Guys",
@@ -133,22 +143,12 @@
       "postedAt": "2026-08-03T00:00:00.0000000"
     },
     {
-      "id": 14,
-      "status": "new",
-      "title": "Executive Virtual Assistant - PH (Remote)",
-      "company": "Snapscale",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/5213938778672285584",
-      "source": "Jooble",
-      "postedAt": "2026-08-03T00:00:00.0000000"
-    },
-    {
       "id": 15,
       "status": "new",
-      "title": "Administrative / Virtual Assistant",
-      "company": "Orgenesis, Inc.",
+      "title": "Office Manager / Administrative Coordinator",
+      "company": "Sir Speedy, Inc.",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-7640558896270166570",
+      "link": "https://jooble.org/jdp/4379802216926535277",
       "source": "Jooble",
       "postedAt": "2026-08-03T00:00:00.0000000"
     }
