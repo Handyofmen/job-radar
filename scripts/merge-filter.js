@@ -4,12 +4,27 @@ const filters = JSON.parse(fs.readFileSync("./config/filters.json", "utf-8"));
 
 function matchesFilters(job) {
   const title = job.title.toLowerCase();
+  const location = (job.location || "").toLowerCase();
 
   const isExcluded = filters.excludeTitles.some(bad => title.includes(bad));
   if (isExcluded) return false;
 
   const isIncluded = filters.includeTitles.some(good => title.includes(good));
-  return isIncluded;
+  if (!isIncluded) return false;
+
+  // Location eligibility check — many US/UK on-site listings pass the title
+  // filter but aren't actually open to a Nigeria-based remote applicant.
+  // Accept if location mentions remote/worldwide/Nigeria, OR if no location
+  // was given at all (some APIs omit it, so absence isn't treated as exclusion).
+  const acceptableLocationSignals = [
+    "remote", "worldwide", "anywhere", "nigeria", "lagos", "africa", "global"
+  ];
+  const looksEligible = !location
+    || location === "not specified"
+    || location === "see listing"
+    || acceptableLocationSignals.some(signal => location.includes(signal));
+
+  return looksEligible;
 }
 
 function dedupeKey(job) {

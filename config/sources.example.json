@@ -19,7 +19,6 @@
     "clientId": "YOUR_GOOGLE_CLIENT_ID",
     "clientSecret": "YOUR_GOOGLE_CLIENT_SECRET",
     "refreshToken": "YOUR_REFRESH_TOKEN",
-    "labelsToScan": ["Jobberman", "LinkedIn", "Jooble", "Glassdoor", "MyJobMag", "Indeed"],
     "processedLabel": "Processed"
   }
 }

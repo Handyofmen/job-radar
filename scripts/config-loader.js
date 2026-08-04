@@ -31,8 +31,6 @@ export const sources = {
     clientId: process.env.GOOGLE_CLIENT_ID || fileConfig.gmail?.clientId || "",
     clientSecret: process.env.GOOGLE_CLIENT_SECRET || fileConfig.gmail?.clientSecret || "",
     refreshToken: process.env.GOOGLE_REFRESH_TOKEN || fileConfig.gmail?.refreshToken || "",
-    labelsToScan: fileConfig.gmail?.labelsToScan
-      || ["Jobberman", "LinkedIn", "Jooble", "Glassdoor", "MyJobMag", "Indeed"],
     processedLabel: fileConfig.gmail?.processedLabel || "Processed"
   }
 };
