@@ -44,12 +44,36 @@ export function mergeAndFilter(jobs) {
 
   const filtered = deduped.filter(matchesFilters);
 
-  // Most recent first when we have a date, otherwise keep original order
+  // Sort within each source by recency (undated jobs sink to the end of
+  // their own group, rather than the end of everything)
   filtered.sort((a, b) => {
     if (!a.postedAt) return 1;
     if (!b.postedAt) return -1;
     return new Date(b.postedAt) - new Date(a.postedAt);
   });
 
-  return filtered.slice(0, filters.maxResultsPerRun);
+  // Group by source so one prolific source (e.g. Jooble) can't crowd out
+  // every other source — previously a pure global sort let this happen,
+  // silently dropping Adzuna/Remotive/RemoteOK/Gmail results entirely
+  // even when hundreds of matching jobs existed.
+  const bySource = {};
+  for (const job of filtered) {
+    if (!bySource[job.source]) bySource[job.source] = [];
+    bySource[job.source].push(job);
+  }
+  const sourceNames = Object.keys(bySource);
+
+  // Round-robin: take one job from each source in turn until the cap is hit
+  const final = [];
+  let round = 0;
+  while (final.length < filters.maxResultsPerRun && sourceNames.some(s => bySource[s][round])) {
+    for (const source of sourceNames) {
+      if (final.length >= filters.maxResultsPerRun) break;
+      const job = bySource[source][round];
+      if (job) final.push(job);
+    }
+    round++;
+  }
+
+  return final;
 }

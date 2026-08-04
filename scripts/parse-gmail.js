@@ -104,9 +104,12 @@ export async function fetchAndParseGmailAlerts() {
     const full = await gmail.users.messages.get({ userId: "me", id: msg.id, format: "full" });
     const sender = getHeader(full.data.payload.headers, "From");
     const source = detectSource(sender);
+    const receivedDate = full.data.internalDate
+      ? new Date(Number(full.data.internalDate)).toISOString()
+      : null;
 
     const html = decodeBody(full.data.payload);
-    const jobs = parseJobsFromHtml(html, source);
+    const jobs = parseJobsFromHtml(html, source).map(job => ({ ...job, postedAt: receivedDate }));
     allJobs.push(...jobs);
 
     // Tag as processed — original "Job Leads" label is left untouched
