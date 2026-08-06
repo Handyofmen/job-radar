@@ -42,15 +42,28 @@ async function ensureProcessedLabelId(gmail) {
   return created.data.id;
 }
 
-function decodeBody(payload) {
-  let data = "";
-  if (payload.parts) {
-    const htmlPart = payload.parts.find(p => p.mimeType === "text/html")
-      || payload.parts.find(p => p.mimeType === "text/plain");
-    if (htmlPart?.body?.data) data = htmlPart.body.data;
-  } else if (payload.body?.data) {
-    data = payload.body.data;
+// Recursively search all nested parts for the first matching leaf part —
+// Gmail messages are often nested (e.g. multipart/mixed containing a
+// multipart/alternative containing the real text/html), and a shallow
+// one-level check misses the actual content entirely, silently returning
+// nothing even when the email clearly has matching text.
+function findPartByMimeType(payload, mimeType) {
+  if (payload.mimeType === mimeType && payload.body?.data) {
+    return payload;
   }
+  if (payload.parts) {
+    for (const part of payload.parts) {
+      const found = findPartByMimeType(part, mimeType);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
+function decodeBody(payload) {
+  const htmlPart = findPartByMimeType(payload, "text/html");
+  const targetPart = htmlPart || findPartByMimeType(payload, "text/plain");
+  const data = targetPart?.body?.data;
   return data ? Buffer.from(data, "base64").toString("utf-8") : "";
 }
 
