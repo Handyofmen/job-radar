@@ -1,7 +1,16 @@
 import fs from "fs";
+import crypto from "crypto";
 import { fetchAllApiSources } from "./fetch-apis.js";
 import { fetchAndParseGmailAlerts } from "./parse-gmail.js";
 import { mergeAndFilter } from "./merge-filter.js";
+
+// A stable ID based on the job's own content (title + company), not its
+// position in the list — position-based IDs meant yesterday's "Skip" on
+// slot #1 would incorrectly mark today's completely different job #1 too.
+function stableId(job) {
+  const key = `${job.title.toLowerCase().trim()}|${job.company.toLowerCase().trim()}`;
+  return crypto.createHash("md5").update(key).digest("hex").slice(0, 10);
+}
 
 async function main() {
   console.log("Fetching from job APIs...");
@@ -18,7 +27,7 @@ async function main() {
   const output = {
     generatedAt: new Date().toISOString(),
     count: finalJobs.length,
-    jobs: finalJobs.map((j, i) => ({ id: i + 1, status: "new", ...j }))
+    jobs: finalJobs.map(j => ({ id: stableId(j), status: "new", ...j }))
   };
 
   fs.mkdirSync("./data", { recursive: true });

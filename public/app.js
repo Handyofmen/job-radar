@@ -20,14 +20,14 @@ function formatDate(iso) {
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 }
 
-function renderEntry(job, savedStatus) {
+function renderEntry(job, displayNumber, savedStatus) {
   const entry = document.createElement("article");
   entry.className = "entry";
   entry.dataset.id = job.id;
   if (savedStatus) entry.classList.add("actioned");
 
   entry.innerHTML = `
-    <div class="entry-number">${String(job.id).padStart(2, "0")}</div>
+    <div class="entry-number">${String(displayNumber).padStart(2, "0")}</div>
     <div class="entry-body">
       <h2 class="entry-title"><a href="${job.link}" target="_blank" rel="noopener">${job.title}</a></h2>
       <div class="entry-meta">
@@ -101,8 +101,8 @@ async function init() {
     return;
   }
 
-  data.jobs.forEach(job => {
-    ledger.appendChild(renderEntry(job, actions[job.id]));
+  data.jobs.forEach((job, index) => {
+    ledger.appendChild(renderEntry(job, index + 1, actions[job.id]));
   });
 }
 
