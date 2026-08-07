@@ -1,46 +1,66 @@
 {
-  "generatedAt": "2026-08-06T02:00:27.105Z",
+  "generatedAt": "2026-08-07T08:22:56.360Z",
   "count": 15,
   "jobs": [
+    {
+      "id": "78b8b6bdc4",
+      "status": "new",
+      "title": "Customer Support Intern",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=1b57829dd174b707&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRuqTj01LDWHro8x-97EOhepw3CaqH9PN03IbGAvfv_mG8&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1jvdl0633gra5800&alid=6a51a1de1cdeec736b12b7c2&bb=d0ndJbkQwRnACMsmZ_WsHeAS5fdxiwI7nyRtqXfqvfumoQEIBIJwoVPCazrLGx1uoKfxn9N1MnqBu2Qv1Ph7due0g2xSaCbfCi6eE_iEobQP5JXGowekFRaYHqi3SMMfUnecIBJiYp1uIlmUbBzqGQ%3D%3D&tmtk=1jvdl0633gra5800",
+      "source": "Indeed",
+      "postedAt": "2026-08-07T08:21:27.000Z"
+    },
+    {
+      "id": "09e4e15fe6",
+      "status": "new",
+      "title": "Human Resources / Admin Officer",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://link.jobberman.com/click/6a75665d5d9ab7b8010d0b5a/aHR0cHM6Ly93d3cuam9iYmVybWFuLmNvbS9saXN0aW5ncy9odW1hbi1yZXNvdXJjZXMtYW5kLWFkbWluLW9mZmljZXItOWtybnc3P3V0bV9jb250ZW50PWxpc3RpbmctdGl0bGUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPWFsZXJ0JnV0bV9jYW1wYWlnbj1hbGVydC13ZWVrbHkmdXRtX3Rlcm09Y2RlLWFsZXJ0cw/6a4260a97aa7df6db10cb8e9C3e528f9f",
+      "source": "Jobberman",
+      "postedAt": "2026-08-07T07:23:19.000Z"
+    },
     {
       "id": "a60f70c8cc",
       "status": "new",
       "title": "Remote executive assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/alert-vacancy/PFMOTXTHEILAXPPBLPBJ/0?ed=46237&amp;fm=1&amp;mid=435e0939-fe4a-402a-808e-41b7173a28a7&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
+      "link": "https://ng.jooble.org/alert-vacancy/PFMOTXTHEILAXPPBLPBJ/0?ed=46239&amp;fm=1&amp;mid=7660c462-41e0-4402-89f3-91aa8d571fda&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
       "source": "Jooble",
-      "postedAt": "2026-08-05T16:23:55.000Z"
+      "postedAt": "2026-08-06T23:12:25.000Z"
     },
     {
-      "id": "63f49d7b08",
+      "id": "fcbb3423b9",
       "status": "new",
-      "title": "No Experience Needed – Remote Customer Service Rep",
+      "title": "Operations Coordinator",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4448269860/?trackingId=S2GWXYA0vdlg1dDoUzfthQ%3D%3D&amp;refId=2i5e0XAvV7p6XgVrJFsU8A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZoErM5y7SFOW9HnW2Sdy2g%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3MeYtwuQ8IbYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4448269860_ssid_5047847097_fmid_9tg252~msfxrd84~pi&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4448269860_ssid_5047847097_fmid_9tg252~msfxrd84~pi-null-9tg252~msfxrd84~pi-null-null&amp;eid=9tg252-msfxrd84-pi&amp;otpToken=YTQ4YmFmYzNlZmZmZmYwYmVmMGMwODQwOWZlYjk0ODNlM2U4Y2U3MTA2ZWY5YTQwNTIyMGFmNzI2MmE0Nzc2ODM1NDczNjNjYzQ0OTc4Yzk1MGRjY2UwYmFiYjA2MDhiMjhjYWY3YWI0MzdiMmJhZTJhNDEzMDFjYTllZjUwZjE3NDZjZDNmMTJlMGFmODI5LDIsMQ%3D%3D",
-      "source": "LinkedIn",
-      "postedAt": "2026-08-05T10:20:15.000Z"
-    },
-    {
-      "id": "5db400a39f",
-      "status": "new",
-      "title": "Operations Officer",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Foperations-officer-16%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd16e5a21-5556ad08-eb59-4469-b199-96fa5dbb5d55-000000/3NWxciRoEzRUjS_v0g5XHkARnq7nPFmheUXwPHxvfKs=452",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Foperations-coordinator-law-and-visas%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd6ad58ea-488fc294-35d5-4225-9ac2-4e87c99bad5c-000000/knRsSPOIq31uVJymUDqflJQIYYNzoTpxCau9IQiV70c=452",
       "source": "MyJobMag",
-      "postedAt": "2026-08-05T10:18:18.000Z"
+      "postedAt": "2026-08-06T10:45:12.000Z"
     },
     {
-      "id": "b81acbf82f",
+      "id": "7692107e4f",
       "status": "new",
-      "title": "Client Services Consultant Manager",
+      "title": "Customer Service Representative - Remote",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.indeed.com/rc/clk/dl?jk=ab19d50bcb5ef9f3&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRu04AGqDAFVbB6f4E_CScrsFzZ8pFblE_5qEJW-B09bko&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1jv8gcivvgra5800&alid=6a51a1de1cdeec736b12b7c2&bb=DQon2KxQAbB6-RF7WjJhxflH9EEtaMu5UFuIqnWaxwKwCii06kKuLkXZOQqbB_Em5fPxOtifESWHFI_mfO4A4q2CQJQ1IYqR8WFgeRs4iulDe0SSP0-JNFyilF7G4hQyB3c9mDLk2ZfAB8eGP4WyRw%3D%3D&tmtk=1jv8gcivvgra5800",
-      "source": "Indeed",
-      "postedAt": "2026-08-05T08:24:43.000Z"
+      "link": "https://www.linkedin.com/comm/jobs/view/4449472717/?trackingId=qFzkPwcQVH3fxSTrVMFk1Q%3D%3D&amp;refId=XvAiqPlSMBLEjRljfwvZ8g%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BjLM9C1ILQ1OGXvMt4SO2lg%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0UVirdZA_cdco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4449472717_ssid_5047847097_fmid_9tg252~mshd77nx~iw&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4449472717_ssid_5047847097_fmid_9tg252~mshd77nx~iw-null-9tg252~mshd77nx~iw-null-null&amp;eid=9tg252-mshd77nx-iw&amp;otpToken=NmY2NTYzMzkwOTVkOGUzNGIyMjcyN2UxZWQxYjhjYTlhZmI2YTI0OTA2YThlNmUwMWNkMmQyMTIyZWYzNTFlOTZjN2MxZTU3NzkzYTNhZjUxNzAxY2NhMDkxNTVlMjc3MjU4OWQwNDczNmQ0MGZmNGRhYTVhYjkxYmNlYzNhM2Y3ZmEwMDdlNWFjMTRiMTA4LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-06T10:20:15.000Z"
+    },
+    {
+      "id": "72d7ecc020",
+      "status": "new",
+      "title": "Executive Assistant",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://link.jobberman.com/click/6a75665d5d9ab7b8010d0b5a/aHR0cHM6Ly93d3cuam9iYmVybWFuLmNvbS9saXN0aW5ncy9leGVjdXRpdmUtYXNzaXN0YW50LXdybnc2cD91dG1fY29udGVudD1saXN0aW5nLXRpdGxlJnV0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1hbGVydCZ1dG1fY2FtcGFpZ249YWxlcnQtd2Vla2x5JnV0bV90ZXJtPWNkZS1hbGVydHM/6a4260a97aa7df6db10cb8e9Cfcf9ce3a",
+      "source": "Jobberman",
+      "postedAt": "2026-08-07T07:23:19.000Z"
     },
     {
       "id": "f15f293794",
@@ -48,29 +68,39 @@
       "title": "Administrative assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/alert-vacancy/ZJGLFAHBFZIZRCTNLHPBJ/0?ed=46237&amp;fm=1&amp;mid=435e0939-fe4a-402a-808e-41b7173a28a7&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
+      "link": "https://ng.jooble.org/alert-vacancy/ZJGLFAHBFZIZRCTNLHPBJ/0?ed=46239&amp;fm=1&amp;mid=7660c462-41e0-4402-89f3-91aa8d571fda&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
       "source": "Jooble",
-      "postedAt": "2026-08-05T16:23:55.000Z"
+      "postedAt": "2026-08-06T23:12:25.000Z"
     },
     {
-      "id": "ed05e1534d",
+      "id": "d506f250d8",
       "status": "new",
-      "title": "No Experience Needed – WFH Customer Service",
+      "title": "Personal Assistant to the MD",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4448272766/?trackingId=zfmjr6%2FbDMi0F4FMfrPG6A%3D%3D&amp;refId=2i5e0XAvV7p6XgVrJFsU8A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZoErM5y7SFOW9HnW2Sdy2g%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3MeYtwuQ8IbYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4448272766_ssid_5047847097_fmid_9tg252~msfxrd84~pi&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4448272766_ssid_5047847097_fmid_9tg252~msfxrd84~pi-null-9tg252~msfxrd84~pi-null-null&amp;eid=9tg252-msfxrd84-pi&amp;otpToken=YTQ4YmFmYzNlZmZmZmYwYmVmMGMwODQwOWZlYjk0ODNlM2U4Y2U3MTA2ZWY5YTQwNTIyMGFmNzI2MmE0Nzc2ODM1NDczNjNjYzQ0OTc4Yzk1MGRjY2UwYmFiYjA2MDhiMjhjYWY3YWI0MzdiMmJhZTJhNDEzMDFjYTllZjUwZjE3NDZjZDNmMTJlMGFmODI5LDIsMQ%3D%3D",
-      "source": "LinkedIn",
-      "postedAt": "2026-08-05T10:20:15.000Z"
-    },
-    {
-      "id": "84f7e9cd9f",
-      "status": "new",
-      "title": "Admin Officer / Secretary",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fadmin-officer-secretary-karisa-consults-limited%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd16e5a21-5556ad08-eb59-4469-b199-96fa5dbb5d55-000000/kD4EqUEBo0tcmQf0Z9GjWiKBqmz_ckOFqB6LwS8JeJc=452",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fpersonal-assistant-to-the-md-tokiye-integrated-medical-services%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd6ad58ea-488fc294-35d5-4225-9ac2-4e87c99bad5c-000000/U7pbu1f3wj_8lbP3BlvF5bN4x2Q589x7QC1kmuDvpPI=452",
       "source": "MyJobMag",
-      "postedAt": "2026-08-05T10:18:18.000Z"
+      "postedAt": "2026-08-06T10:45:12.000Z"
+    },
+    {
+      "id": "63f49d7b08",
+      "status": "new",
+      "title": "No Experience Needed – Remote Customer Service Rep",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4448983212/?trackingId=TaUKlfFhS4IwKzntn3cDmQ%3D%3D&amp;refId=XvAiqPlSMBLEjRljfwvZ8g%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BjLM9C1ILQ1OGXvMt4SO2lg%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0UVirdZA_cdco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4448983212_ssid_5047847097_fmid_9tg252~mshd77nx~iw&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_1_jobid_4448983212_ssid_5047847097_fmid_9tg252~mshd77nx~iw-null-9tg252~mshd77nx~iw-null-null&amp;eid=9tg252-mshd77nx-iw&amp;otpToken=NmY2NTYzMzkwOTVkOGUzNGIyMjcyN2UxZWQxYjhjYTlhZmI2YTI0OTA2YThlNmUwMWNkMmQyMTIyZWYzNTFlOTZjN2MxZTU3NzkzYTNhZjUxNzAxY2NhMDkxNTVlMjc3MjU4OWQwNDczNmQ0MGZmNGRhYTVhYjkxYmNlYzNhM2Y3ZmEwMDdlNWFjMTRiMTA4LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-06T10:20:15.000Z"
+    },
+    {
+      "id": "9c53e7b03f",
+      "status": "new",
+      "title": "Admin Officer",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://link.jobberman.com/click/6a75665d5d9ab7b8010d0b5a/aHR0cHM6Ly93d3cuam9iYmVybWFuLmNvbS9saXN0aW5ncy9hZG1pbi1vZmZpY2VyLXg4d3EwND91dG1fY29udGVudD1saXN0aW5nLXRpdGxlJnV0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1hbGVydCZ1dG1fY2FtcGFpZ249YWxlcnQtd2Vla2x5JnV0bV90ZXJtPWNkZS1hbGVydHM/6a4260a97aa7df6db10cb8e9C86ba86c4",
+      "source": "Jobberman",
+      "postedAt": "2026-08-07T07:23:19.000Z"
     },
     {
       "id": "10e15c2ab8",
@@ -78,59 +108,29 @@
       "title": "Virtual assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/alert-vacancy/NUPIPFRSMNLYNCBNLHPBJ/0?ed=46237&amp;fm=1&amp;mid=435e0939-fe4a-402a-808e-41b7173a28a7&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
+      "link": "https://ng.jooble.org/alert-vacancy/NUPIPFRSMNLYNCBNLHPBJ/0?ed=46239&amp;fm=1&amp;mid=7660c462-41e0-4402-89f3-91aa8d571fda&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
       "source": "Jooble",
-      "postedAt": "2026-08-05T16:23:55.000Z"
+      "postedAt": "2026-08-06T23:12:25.000Z"
     },
     {
-      "id": "3673f1662b",
+      "id": "f319ea2cd9",
       "status": "new",
-      "title": "Remote Customer Service Representative w/ the VA (Phone/Email/Chat)",
+      "title": "Admin Officer (Facility Management)",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4448278054/?trackingId=99P90UB6l%2FkN5VaIQVEh6g%3D%3D&amp;refId=2i5e0XAvV7p6XgVrJFsU8A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZoErM5y7SFOW9HnW2Sdy2g%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3MeYtwuQ8IbYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4448278054_ssid_5047847097_fmid_9tg252~msfxrd84~pi&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4448278054_ssid_5047847097_fmid_9tg252~msfxrd84~pi-null-9tg252~msfxrd84~pi-null-null&amp;eid=9tg252-msfxrd84-pi&amp;otpToken=YTQ4YmFmYzNlZmZmZmYwYmVmMGMwODQwOWZlYjk0ODNlM2U4Y2U3MTA2ZWY5YTQwNTIyMGFmNzI2MmE0Nzc2ODM1NDczNjNjYzQ0OTc4Yzk1MGRjY2UwYmFiYjA2MDhiMjhjYWY3YWI0MzdiMmJhZTJhNDEzMDFjYTllZjUwZjE3NDZjZDNmMTJlMGFmODI5LDIsMQ%3D%3D",
-      "source": "LinkedIn",
-      "postedAt": "2026-08-05T10:20:15.000Z"
-    },
-    {
-      "id": "3f05cc1d7a",
-      "status": "new",
-      "title": "Executive Assistant - Port Harcourt",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fexecutive-assistant-port-harcourt-pruvia-integrated-limited%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd16e5a21-5556ad08-eb59-4469-b199-96fa5dbb5d55-000000/qqZUokDMTjy3EmtkRKCW28GDC6-NTvUWjFklKyiunaw=452",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fadmin-officer-facility-management-petrogap-oil-and-gas-limited-9%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd6ad58ea-488fc294-35d5-4225-9ac2-4e87c99bad5c-000000/IRPwec-hGs6GSJ2vAc34mdnumUjJ7bkswYSaN26crrY=452",
       "source": "MyJobMag",
-      "postedAt": "2026-08-05T10:18:18.000Z"
+      "postedAt": "2026-08-06T10:45:12.000Z"
     },
     {
-      "id": "72d7ecc020",
+      "id": "ed05e1534d",
       "status": "new",
-      "title": "Executive assistant",
+      "title": "No Experience Needed – WFH Customer Service",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/alert-vacancy/UTJTSVFMDOSFYBNNLHPBJ/0?ed=46237&amp;fm=1&amp;mid=435e0939-fe4a-402a-808e-41b7173a28a7&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T16:23:55.000Z"
-    },
-    {
-      "id": "d30735283e",
-      "status": "new",
-      "title": "Customer Service Representative - WFH",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4448615683/?trackingId=oXEV20rEY89HVB60QrvjnQ%3D%3D&amp;refId=2i5e0XAvV7p6XgVrJFsU8A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZoErM5y7SFOW9HnW2Sdy2g%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3MeYtwuQ8IbYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4448615683_ssid_5047847097_fmid_9tg252~msfxrd84~pi&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4448615683_ssid_5047847097_fmid_9tg252~msfxrd84~pi-null-9tg252~msfxrd84~pi-null-null&amp;eid=9tg252-msfxrd84-pi&amp;otpToken=YTQ4YmFmYzNlZmZmZmYwYmVmMGMwODQwOWZlYjk0ODNlM2U4Y2U3MTA2ZWY5YTQwNTIyMGFmNzI2MmE0Nzc2ODM1NDczNjNjYzQ0OTc4Yzk1MGRjY2UwYmFiYjA2MDhiMjhjYWY3YWI0MzdiMmJhZTJhNDEzMDFjYTllZjUwZjE3NDZjZDNmMTJlMGFmODI5LDIsMQ%3D%3D",
+      "link": "https://www.linkedin.com/comm/jobs/view/4448967944/?trackingId=3V4KCEyCnZGkKvS%2F5XDClg%3D%3D&amp;refId=XvAiqPlSMBLEjRljfwvZ8g%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BjLM9C1ILQ1OGXvMt4SO2lg%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0UVirdZA_cdco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4448967944_ssid_5047847097_fmid_9tg252~mshd77nx~iw&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4448967944_ssid_5047847097_fmid_9tg252~mshd77nx~iw-null-9tg252~mshd77nx~iw-null-null&amp;eid=9tg252-mshd77nx-iw&amp;otpToken=NmY2NTYzMzkwOTVkOGUzNGIyMjcyN2UxZWQxYjhjYTlhZmI2YTI0OTA2YThlNmUwMWNkMmQyMTIyZWYzNTFlOTZjN2MxZTU3NzkzYTNhZjUxNzAxY2NhMDkxNTVlMjc3MjU4OWQwNDczNmQ0MGZmNGRhYTVhYjkxYmNlYzNhM2Y3ZmEwMDdlNWFjMTRiMTA4LDIsMQ%3D%3D",
       "source": "LinkedIn",
-      "postedAt": "2026-08-05T10:20:15.000Z"
-    },
-    {
-      "id": "c6416d5bbe",
-      "status": "new",
-      "title": "Procurement, Logistics, &amp; Administrative Officer",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fprocurement-logistics-administrative-officer-elizabeth-glaser-pediatric-aids-foundation-egpaf%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd16e5a21-5556ad08-eb59-4469-b199-96fa5dbb5d55-000000/xJM5pA61QJOR8aS7bJxJYhAOdZxe2d_HuBrssUoUcg4=452",
-      "source": "MyJobMag",
-      "postedAt": "2026-08-05T10:18:18.000Z"
+      "postedAt": "2026-08-06T10:20:15.000Z"
     },
     {
       "id": "c2c7ade52c",
@@ -140,17 +140,17 @@
       "location": "See listing",
       "link": "https://help.jooble.org/support/home",
       "source": "Jooble",
-      "postedAt": "2026-08-05T16:23:55.000Z"
+      "postedAt": "2026-08-06T23:12:25.000Z"
     },
     {
-      "id": "3c06a6ff77",
+      "id": "70938fb29d",
       "status": "new",
-      "title": "Customer Support Representative",
+      "title": "Customer Service / Front Desk Officer",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4448247763/?trackingId=y%2FqEuvzL9BwwNdm7%2FulzPw%3D%3D&amp;refId=2i5e0XAvV7p6XgVrJFsU8A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZoErM5y7SFOW9HnW2Sdy2g%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=3MeYtwuQ8IbYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4448247763_ssid_5047847097_fmid_9tg252~msfxrd84~pi&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4448247763_ssid_5047847097_fmid_9tg252~msfxrd84~pi-null-9tg252~msfxrd84~pi-null-null&amp;eid=9tg252-msfxrd84-pi&amp;otpToken=YTQ4YmFmYzNlZmZmZmYwYmVmMGMwODQwOWZlYjk0ODNlM2U4Y2U3MTA2ZWY5YTQwNTIyMGFmNzI2MmE0Nzc2ODM1NDczNjNjYzQ0OTc4Yzk1MGRjY2UwYmFiYjA2MDhiMjhjYWY3YWI0MzdiMmJhZTJhNDEzMDFjYTllZjUwZjE3NDZjZDNmMTJlMGFmODI5LDIsMQ%3D%3D",
-      "source": "LinkedIn",
-      "postedAt": "2026-08-05T10:20:15.000Z"
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fcustomer-service-front-desk-officer-prisms-healthcare-limited%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019fd6ad58ea-488fc294-35d5-4225-9ac2-4e87c99bad5c-000000/kCbQ5Oohg6nnPl_zEgKeNvVy5BUwC1q7iNrt8j5q26s=452",
+      "source": "MyJobMag",
+      "postedAt": "2026-08-06T10:45:12.000Z"
     }
   ]
 }
