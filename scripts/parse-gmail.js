@@ -45,8 +45,7 @@ async function ensureProcessedLabelId(gmail) {
 // Recursively search all nested parts for the first matching leaf part —
 // Gmail messages are often nested (e.g. multipart/mixed containing a
 // multipart/alternative containing the real text/html), and a shallow
-// one-level check misses the actual content entirely, silently returning
-// nothing even when the email clearly has matching text.
+// one-level check misses the actual content entirely.
 function findPartByMimeType(payload, mimeType) {
   if (payload.mimeType === mimeType && payload.body?.data) {
     return payload;
@@ -72,11 +71,6 @@ function getHeader(headers, name) {
   return header ? header.value : "";
 }
 
-/**
- * Very lightweight per-source parsing. Job alert HTML is fairly stable
- * template-to-template, so this looks for repeated <a> job-title links.
- * Tune the regex per source as templates change.
- */
 function parseJobsFromHtml(html, source) {
   const jobs = [];
   const linkPattern = /<a[^>]+href="([^"]+)"[^>]*>([^<]{5,120})<\/a>/g;
@@ -106,11 +100,19 @@ export async function fetchAndParseGmailAlerts() {
   const allJobs = [];
 
   // Single real label, not one per platform — Gmail's query syntax uses
-  // hyphens in place of spaces for multi-word label names
+  // hyphens in place of spaces for multi-word label names.
+  //
+  // FIX: removed "newer_than:3d" — this was silently excluding any backlog
+  // older than 3 days from ever being seen at all, regardless of Processed
+  // status. The Processed label already prevents duplicates on its own, so
+  // the date filter was redundant and actively harmful whenever there's a
+  // gap in running the tool (e.g. during last week's token expiry).
   const labelQueryName = JOB_LEADS_LABEL.toLowerCase().replace(/\s+/g, "-");
-  const query = `label:${labelQueryName} -label:${processedLabel.toLowerCase()} newer_than:3d`;
+  const query = `label:${labelQueryName} -label:${processedLabel.toLowerCase()}`;
 
-  const listRes = await gmail.users.messages.list({ userId: "me", q: query, maxResults: 40 });
+  // Raised from 40 to 100 so a large backlog can clear over a few runs
+  // instead of trickling in extremely slowly.
+  const listRes = await gmail.users.messages.list({ userId: "me", q: query, maxResults: 100 });
   const messages = listRes.data.messages || [];
 
   for (const msg of messages) {
