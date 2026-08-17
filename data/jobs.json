@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-17T09:10:24.671Z",
+  "generatedAt": "2026-08-17T09:30:47.207Z",
   "count": 15,
   "jobs": [
     {
-      "id": "c1429858f7",
+      "id": "31e65e2f3a",
       "status": "new",
-      "title": "Office Administrator",
-      "company": "Auto-chlor",
+      "title": "Admin and Operations officer- Maternity Leave Cover",
+      "company": "Jdc",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-1774377873114373676",
+      "link": "https://jooble.org/jdp/-2493705711687981835",
       "source": "Jooble",
-      "postedAt": "2026-08-16T09:44:53.4400000"
+      "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
       "id": "030f81e6c9",
@@ -23,22 +23,12 @@
       "postedAt": "2026-08-12T16:00:04+00:00"
     },
     {
-      "id": "31e65e2f3a",
-      "status": "new",
-      "title": "Admin and Operations officer- Maternity Leave Cover",
-      "company": "Jdc",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-2493705711687981835",
-      "source": "Jooble",
-      "postedAt": "2026-08-16T00:00:00.0000000"
-    },
-    {
       "id": "aa0e64750e",
       "status": "new",
       "title": "Business Development and Admin Officer (Guam)",
       "company": "Planate Management Group",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-6830749798427856870",
+      "link": "https://jooble.org/jdp/6399097605486069664",
       "source": "Jooble",
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
@@ -53,22 +43,22 @@
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
-      "id": "b448c5e3c6",
-      "status": "new",
-      "title": "Administrative Assistant / Office Manager",
-      "company": "The Progeria Research Foundation",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/7717551065488144518",
-      "source": "Jooble",
-      "postedAt": "2026-08-16T00:00:00.0000000"
-    },
-    {
       "id": "03a2247bc2",
       "status": "new",
       "title": "Administrative Assistant/Office Manager",
       "company": "Partnership Development Group",
       "location": "Remote",
       "link": "https://jooble.org/jdp/-8653224018840906109",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "b448c5e3c6",
+      "status": "new",
+      "title": "Administrative Assistant / Office Manager",
+      "company": "The Progeria Research Foundation",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/7717551065488144518",
       "source": "Jooble",
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
@@ -123,12 +113,12 @@
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
-      "id": "05ef98b792",
+      "id": "08c544a6b6",
       "status": "new",
-      "title": "Education & Engagement Office Administrator",
-      "company": "Milwaukee Repertory Theater",
+      "title": "After School Office Administrator",
+      "company": "Notre Dame School Of Milwaukee",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/3028072599961382566",
+      "link": "https://jooble.org/jdp/8173957139367428066",
       "source": "Jooble",
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
@@ -143,12 +133,22 @@
       "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
-      "id": "08c544a6b6",
+      "id": "05ef98b792",
       "status": "new",
-      "title": "After School Office Administrator",
-      "company": "Notre Dame School Of Milwaukee",
+      "title": "Education & Engagement Office Administrator",
+      "company": "Milwaukee Repertory Theater",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/8173957139367428066",
+      "link": "https://jooble.org/jdp/3028072599961382566",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "f6da62fdb0",
+      "status": "new",
+      "title": "Office Manager/Logistics/Admin Assistant",
+      "company": "Le'fant Llc",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-6620263468861502728",
       "source": "Jooble",
       "postedAt": "2026-08-16T00:00:00.0000000"
     }
