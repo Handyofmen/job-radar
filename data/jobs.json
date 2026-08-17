@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T01:38:29.021Z",
+  "generatedAt": "2026-08-17T09:49:23.593Z",
   "count": 15,
   "jobs": [
     {
@@ -10,7 +10,17 @@
       "location": "Remote",
       "link": "https://jooble.org/jdp/-2493705711687981835",
       "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "030f81e6c9",
+      "status": "new",
+      "title": "Customer Service Representative",
+      "company": "Adaptive Teams",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-adaptive-teams-1136566",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-12T16:00:04+00:00"
     },
     {
       "id": "aa0e64750e",
@@ -18,9 +28,9 @@
       "title": "Business Development and Admin Officer (Guam)",
       "company": "Planate Management Group",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/8023700437452232285",
+      "link": "https://jooble.org/jdp/-6830749798427856870",
       "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
+      "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
       "id": "9b8f57d2b2",
@@ -30,7 +40,107 @@
       "location": "Remote",
       "link": "https://jooble.org/jdp/-9143198744220850806",
       "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "157a6b54ef",
+      "status": "new",
+      "title": "Administrative Assistant/Office Manager",
+      "company": "Mercer Advisors",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/625670851335982535",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "03a2247bc2",
+      "status": "new",
+      "title": "Administrative Assistant/Office Manager",
+      "company": "Partnership Development Group",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-8653224018840906109",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "b448c5e3c6",
+      "status": "new",
+      "title": "Administrative Assistant / Office Manager",
+      "company": "The Progeria Research Foundation",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/7717551065488144518",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "bc5fa67323",
+      "status": "new",
+      "title": "Administrative / Virtual Assistant",
+      "company": "Orgenesis, Inc.",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-7640558896270166570",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "2f5cad5767",
+      "status": "new",
+      "title": "Scheduler/Office Manager",
+      "company": "Advisacare",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-2710018528600183200",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "c23690ca65",
+      "status": "new",
+      "title": "Office Manager/Scheduler",
+      "company": "Dayspring Services",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/4699152138020888540",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "84ecd6fca2",
+      "status": "new",
+      "title": "Administrative Assistant / Accounts Receivable Specialist",
+      "company": "Veneer Chip Transport, Inc.",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/8517408578142537644",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "08c544a6b6",
+      "status": "new",
+      "title": "After School Office Administrator",
+      "company": "Notre Dame School Of Milwaukee",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/8173957139367428066",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "67819999d0",
+      "status": "new",
+      "title": "School Office Administrator",
+      "company": "St John Vianney Church And School",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/536136415069030557",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
+    },
+    {
+      "id": "05ef98b792",
+      "status": "new",
+      "title": "Education & Engagement Office Administrator",
+      "company": "Milwaukee Repertory Theater",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/3028072599961382566",
+      "source": "Jooble",
+      "postedAt": "2026-08-16T00:00:00.0000000"
     },
     {
       "id": "f6da62fdb0",
@@ -40,117 +150,7 @@
       "location": "Remote",
       "link": "https://jooble.org/jdp/-6620263468861502728",
       "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "2c57f34802",
-      "status": "new",
-      "title": "Sr. Executive Admin Assistant",
-      "company": "Fleet Farm Careers",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/39886990841404439",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "e84b72eca4",
-      "status": "new",
-      "title": "Executive Admin Assistant",
-      "company": "Integrated Resources Inc.",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-532064238986404215",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "1cb32e6c9f",
-      "status": "new",
-      "title": "Executive Assistant/ Admin Assistant II",
-      "company": "Mindlance",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-2987296984307611702",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "a0bf014d1b",
-      "status": "new",
-      "title": "Executive Admin Assistant 3 - Korean/English bilingual",
-      "company": "Vtekis Consulting Llp",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-8177815715122230966",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "f1705559f3",
-      "status": "new",
-      "title": "Executive Admin Assistant",
-      "company": "Cook Systems",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/1002059786362571817",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "daaeba5495",
-      "status": "new",
-      "title": "Experienced Office Admin Assistant",
-      "company": "Liquid Brand",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/5053299233340752524",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "8f39c86d07",
-      "status": "new",
-      "title": "Office Admin Assistant",
-      "company": "Car Guys",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-409040208670725413",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "a790a5574d",
-      "status": "new",
-      "title": "Office Administrator",
-      "company": "Professional Moving Company",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/7293966074523959988",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "150f336a18",
-      "status": "new",
-      "title": "Office Administrator",
-      "company": "Ras Logistics",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-8335301709150626598",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "6d0ab59cee",
-      "status": "new",
-      "title": "Office Administrator",
-      "company": "Ascend Partner Firms",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-3547906388158537464",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
-    },
-    {
-      "id": "6b5567866e",
-      "status": "new",
-      "title": "Office Administrator",
-      "company": "Compass",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/2408200940200233963",
-      "source": "Jooble",
-      "postedAt": "2026-08-05T00:00:00.0000000"
+      "postedAt": "2026-08-16T00:00:00.0000000"
     }
   ]
 }
