@@ -1,16 +1,22 @@
 import fs from "fs";
+import crypto from "crypto";
 
 const filters = JSON.parse(fs.readFileSync("./config/filters.json", "utf-8"));
 
-// Nigerian cities other than Lagos — these get excluded unless the listing
-// also explicitly says "remote", since a location like "Enugu, Nigeria"
-// was previously passing just because it contained "nigeria" broadly.
 const NON_LAGOS_NIGERIAN_CITIES = [
   "abuja", "enugu", "kano", "ibadan", "port harcourt", "kaduna",
   "benin city", "jos", "owerri", "calabar", "warri", "uyo",
   "abeokuta", "ilorin", "onitsha", "aba", "asaba", "akure", "makurdi",
   "minna", "sokoto", "maiduguri", "zaria", "ogun", "ondo", "oyo", "kwara"
 ];
+
+// A stable ID based on the job's own content (title + company), not its
+// position in a list — shared between merge-filter.js and run.js so both
+// always compute the exact same ID for the exact same job.
+export function stableId(job) {
+  const key = `${job.title.toLowerCase().trim()}|${job.company.toLowerCase().trim()}`;
+  return crypto.createHash("md5").update(key).digest("hex").slice(0, 10);
+}
 
 function matchesFilters(job) {
   const title = job.title.toLowerCase();
@@ -26,28 +32,30 @@ function matchesFilters(job) {
     signal => location.includes(signal)
   );
 
-  // Explicitly reject other Nigerian cities unless genuinely remote —
-  // previously these passed incorrectly just because "nigeria" appeared
-  // somewhere in the location string, regardless of which city.
   const mentionsOtherNigerianCity = NON_LAGOS_NIGERIAN_CITIES.some(
     city => location.includes(city)
   );
   if (mentionsOtherNigerianCity && !mentionsRemote) return false;
 
-  const looksEligible = mentionsRemote
+  return mentionsRemote
     || location.includes("lagos")
     || !location
     || location === "not specified"
     || location === "see listing";
-
-  return looksEligible;
 }
 
 function dedupeKey(job) {
   return `${job.title.toLowerCase().trim()}|${job.company.toLowerCase().trim()}`;
 }
 
-export function mergeAndFilter(jobs) {
+/**
+ * seenIds: a Set of job IDs (from stableId) that have already been shown
+ * to the user in a previous run. Anything matching gets excluded before
+ * the round-robin selection, so already-seen jobs never take up one of
+ * today's slots again — regardless of whether the user applied, saved,
+ * or skipped it. This is what actually guarantees "new" means new.
+ */
+export function mergeAndFilter(jobs, seenIds = new Set()) {
   const seen = new Set();
   const deduped = [];
 
@@ -58,7 +66,9 @@ export function mergeAndFilter(jobs) {
     deduped.push(job);
   }
 
-  const filtered = deduped.filter(matchesFilters);
+  const filtered = deduped
+    .filter(matchesFilters)
+    .filter(job => !seenIds.has(stableId(job)));
 
   filtered.sort((a, b) => {
     if (!a.postedAt) return 1;

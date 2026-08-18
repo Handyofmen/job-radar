@@ -1,15 +1,23 @@
 import fs from "fs";
-import crypto from "crypto";
 import { fetchAllApiSources } from "./fetch-apis.js";
 import { fetchAndParseGmailAlerts } from "./parse-gmail.js";
-import { mergeAndFilter } from "./merge-filter.js";
+import { mergeAndFilter, stableId } from "./merge-filter.js";
 
-// A stable ID based on the job's own content (title + company), not its
-// position in the list — position-based IDs meant yesterday's "Skip" on
-// slot #1 would incorrectly mark today's completely different job #1 too.
-function stableId(job) {
-  const key = `${job.title.toLowerCase().trim()}|${job.company.toLowerCase().trim()}`;
-  return crypto.createHash("md5").update(key).digest("hex").slice(0, 10);
+const SEEN_FILE = "./data/seen-jobs.json";
+
+function loadSeenIds() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(SEEN_FILE, "utf-8"));
+    return new Set(raw.map(entry => entry.id));
+  } catch {
+    // First run ever, or file doesn't exist yet — start with an empty set
+    return new Set();
+  }
+}
+
+function saveSeenIds(seenIds) {
+  const entries = Array.from(seenIds).map(id => ({ id }));
+  fs.writeFileSync(SEEN_FILE, JSON.stringify(entries, null, 2));
 }
 
 async function main() {
@@ -22,7 +30,11 @@ async function main() {
   console.log(`  → ${gmailJobs.length} jobs from Gmail`);
 
   const allJobs = [...apiJobs, ...gmailJobs];
-  const finalJobs = mergeAndFilter(allJobs);
+
+  const seenIds = loadSeenIds();
+  console.log(`  → ${seenIds.size} jobs already shown in previous runs (excluded)`);
+
+  const finalJobs = mergeAndFilter(allJobs, seenIds);
 
   const output = {
     generatedAt: new Date().toISOString(),
@@ -32,7 +44,13 @@ async function main() {
 
   fs.mkdirSync("./data", { recursive: true });
   fs.writeFileSync("./data/jobs.json", JSON.stringify(output, null, 2));
-  console.log(`Done. ${finalJobs.length} jobs written to data/jobs.json`);
+
+  // Add today's shown jobs to the permanent seen list, so they never
+  // reappear in any future run regardless of what the user did with them
+  finalJobs.forEach(job => seenIds.add(stableId(job)));
+  saveSeenIds(seenIds);
+
+  console.log(`Done. ${finalJobs.length} new jobs written to data/jobs.json`);
 }
 
 main().catch(err => {
