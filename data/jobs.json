@@ -1,36 +1,16 @@
 {
-  "generatedAt": "2026-08-18T02:04:35.747Z",
+  "generatedAt": "2026-08-21T01:04:51.843Z",
   "count": 15,
   "jobs": [
-    {
-      "id": "9467074cf3",
-      "status": "new",
-      "title": "Customer Service Officer",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://ng.indeed.com/rc/clk/dl?jk=1d8b35bd1f4b1c7f&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxPJ7g5eMX8IdDOlG2rOea38X1KY1YnymVIh7ssfaS8UqQ&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k0992vrgjlqc808&alid=6a51a1d0726cc4798856f9ef&bb=J10aecuAmsRU39Anv4bTIhXvZ1HtEuUGLCDGb2z6lBXTTaNXGHyaGhjJz0MSuGfZIzC_eSksbJKD92dzZkdAQS_OQOsCXQA7pN_533wOTzFuWK09ZZmTiqGbqCQvDUmtGl6KlKtW-zvUOLahvUcuMg%3D%3D&tmtk=1k0992vrgjlqc808",
-      "source": "Indeed",
-      "postedAt": "2026-08-18T01:52:01.000Z"
-    },
     {
       "id": "a60f70c8cc",
       "status": "new",
       "title": "Remote executive assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/redir/alertview-from-letter/PFMOTXTHEILAXPPBLPBJ/0?ed=46249&amp;fm=1&amp;mid=7c54af1c-599c-41c3-9b9a-4886632a09f2&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc1ODc0MzAsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.KRPJ3HaTwhFmmtKcB-OvwPxc83hEoii3bpmRU_joyiI",
+      "link": "https://ng.jooble.org/redir/alertview-from-letter/PFMOTXTHEILAXPPBLPBJ/0?ed=46253&amp;fm=1&amp;mid=a7ca3827-d0dc-45d3-89ff-c2926a1c6640&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc4NzE5NTgsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.C764aUii8DMEGJyNLhbSGqBXW5vnVf7-4nEInpKjmMA",
       "source": "Jooble",
-      "postedAt": "2026-08-17T16:10:15.000Z"
-    },
-    {
-      "id": "5db400a39f",
-      "status": "new",
-      "title": "Operations Officer",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Foperations-officer-fmr-agency-1%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a00f66c728-29b2d265-f658-40a9-9291-05305d1eacdd-000000/OAscVmAvKt_YLdhLq14IplTyjpy7loLJQr5oqvRhCQw=452",
-      "source": "MyJobMag",
-      "postedAt": "2026-08-17T11:06:29.000Z"
+      "postedAt": "2026-08-20T23:10:00.000Z"
     },
     {
       "id": "044841aa97",
@@ -38,29 +18,29 @@
       "title": "Customer Service Representative",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4455185114/?trackingId=whoPaRQD4GmjFYRa5e2jEg%3D%3D&amp;refId=TaM4afY5JFhxFk6Yr6nHyg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B2X77WremQKe%2BDZFC4vf3oQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=2MJISa0QeIsIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4455185114_ssid_5047847097_fmid_9tg252~msx31lbl~b3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4455185114_ssid_5047847097_fmid_9tg252~msx31lbl~b3-null-9tg252~msx31lbl~b3-null-null&amp;eid=9tg252-msx31lbl-b3&amp;otpToken=ODgzMDhiNzk1NDBkYTk0NGQxY2I0OTlkMTg2ODcwMWE5NTNkNjA5OTFhNzJkMDRjMzA4OTVjMmZjNTQ0ZTMyOTYyM2QzMDg0NWIyYWRjNWMxOTFjYzliMGExYWY5YThjOWI3NjdmYjJkNmJiZjc2NWE0MzA5YTZlMGZhYjgyMGI2MmU2MDVhZGYzODhlY2Y5LDIsMQ%3D%3D",
+      "link": "https://www.linkedin.com/comm/jobs/view/4453450333/?trackingId=Fi8nnqAAD%2Fl9taDtkQMlOA%3D%3D&amp;refId=8vN2VRlQi4Y%2BV4MVrKxAyw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BHHX3NCdXTmmmg%2FLL2WWIgg%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0V6Z-CepucwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4453450333_ssid_5047847097_fmid_9tg252~mt1dd4wn~uv&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_0_jobid_4453450333_ssid_5047847097_fmid_9tg252~mt1dd4wn~uv-null-9tg252~mt1dd4wn~uv-null-null&amp;eid=9tg252-mt1dd4wn-uv&amp;otpToken=N2NhODNiZGE1YTg3OTNjMDI1ZTVhMDZhMTM2NzU1ZTc0YzZmYzJjZTBkYjFjMDEyN2M5Y2Y2Njk5NDQ3Y2Y5NjU3NDNlMDA4ZTJiNjcyZmI5NDgzYzYxNGQ2NmY3ZmE1ODhkNTU3NTUwNmU2NDVlMTE5YTUxMGZhODYwNGE4NzQ2NTAwMjc1MzcwODBhOGIzLDIsMQ%3D%3D",
       "source": "LinkedIn",
-      "postedAt": "2026-08-17T10:20:15.000Z"
+      "postedAt": "2026-08-20T10:20:14.000Z"
     },
     {
-      "id": "0286410b5e",
+      "id": "72a6986433",
       "status": "new",
-      "title": "Personal Assistant",
+      "title": "Business Operations Coordinator",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://link.jobberman.com/click/6a7e9fa4ef9c54d67904d718/aHR0cHM6Ly93d3cuam9iYmVybWFuLmNvbS9saXN0aW5ncy9wZXJzb25hbC1hc3Npc3RhbnQtd3JuOWdqP3V0bV9jb250ZW50PWxpc3RpbmctdGl0bGUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPWFsZXJ0JnV0bV9jYW1wYWlnbj1hbGVydC13ZWVrbHkmdXRtX3Rlcm09Y2RlLWFsZXJ0cw/6a4260a97aa7df6db10cb8e9Cd0000246",
-      "source": "Jobberman",
-      "postedAt": "2026-08-14T07:28:17.000Z"
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fbusiness-operations-coordinator-golden-oil-industries-limited%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a01e6beb70-347400cc-385e-45cc-b865-a34ff7d1d2c9-000000/W5cZ1dmD5FZkJs2MdhkCICea-BSO3eQa8in_Y7ZMmas=452",
+      "source": "MyJobMag",
+      "postedAt": "2026-08-20T09:06:24.000Z"
     },
     {
-      "id": "030f81e6c9",
+      "id": "b497f2e526",
       "status": "new",
-      "title": "Customer Service Representative",
-      "company": "Adaptive Teams",
-      "location": "Remote",
-      "link": "https://remoteOK.com/remote-jobs/remote-customer-service-representative-adaptive-teams-1136566",
-      "source": "RemoteOK",
-      "postedAt": "2026-08-12T16:00:04+00:00"
+      "title": "Marketing Operations Coordinator (Canva, PowerPoint & Spreadsheets)",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=4b47ee1962b1b4fe&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRutAUFK6s-Y1uHrcavuYz0fVR6tf5PBeMvwenQrrosD3I&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k0c9rd4dg4t3800&alid=6a51a1de1cdeec736b12b7c2&bb=CuAtWsoWc7hnXnC8FdVvkohxpSZMQw37rDOCdq3HGbFw4oj5ly2vLSP9svSUgu22EBiTmpyD1PZclIq4Ky-qyuD9Ka1Uhctd36UwAWjDUh31cURHv_1_uPcby9ZlkGxVv6yZCzfCV6UGx0HorukN-Q%3D%3D&tmtk=1k0c9rd4dg4t3800",
+      "source": "Indeed",
+      "postedAt": "2026-08-19T06:03:04.000Z"
     },
     {
       "id": "f15f293794",
@@ -68,29 +48,29 @@
       "title": "Administrative assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/redir/alertview-from-letter/ZJGLFAHBFZIZRCTNLHPBJ/0?ed=46249&amp;fm=1&amp;mid=7c54af1c-599c-41c3-9b9a-4886632a09f2&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc1ODc0MzAsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.KRPJ3HaTwhFmmtKcB-OvwPxc83hEoii3bpmRU_joyiI",
+      "link": "https://ng.jooble.org/redir/alertview-from-letter/ZJGLFAHBFZIZRCTNLHPBJ/0?ed=46253&amp;fm=1&amp;mid=a7ca3827-d0dc-45d3-89ff-c2926a1c6640&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc4NzE5NTgsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.C764aUii8DMEGJyNLhbSGqBXW5vnVf7-4nEInpKjmMA",
       "source": "Jooble",
-      "postedAt": "2026-08-17T16:10:15.000Z"
+      "postedAt": "2026-08-20T23:10:00.000Z"
     },
     {
-      "id": "6ed47f6db8",
+      "id": "8e3ab43d18",
       "status": "new",
-      "title": "Outsourcing &amp; Operations Officer",
+      "title": "REMOTE Entry Level Customer Service Rep",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Foutsourcing-operations-officer-smart-partners%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a00f66c728-29b2d265-f658-40a9-9291-05305d1eacdd-000000/GeFwRQOscw9c0dLt-uKPcnpYeI4O7bs7Ob-0LM4uJuo=452",
-      "source": "MyJobMag",
-      "postedAt": "2026-08-17T11:06:29.000Z"
-    },
-    {
-      "id": "cc4a8c2c31",
-      "status": "new",
-      "title": "Remote Customer Service Representative",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4377644772/?trackingId=w%2Buf9ImTvi4tGuGhAv6W8A%3D%3D&amp;refId=TaM4afY5JFhxFk6Yr6nHyg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B2X77WremQKe%2BDZFC4vf3oQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=2MJISa0QeIsIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4377644772_ssid_5047847097_fmid_9tg252~msx31lbl~b3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4377644772_ssid_5047847097_fmid_9tg252~msx31lbl~b3-null-9tg252~msx31lbl~b3-null-null&amp;eid=9tg252-msx31lbl-b3&amp;otpToken=ODgzMDhiNzk1NDBkYTk0NGQxY2I0OTlkMTg2ODcwMWE5NTNkNjA5OTFhNzJkMDRjMzA4OTVjMmZjNTQ0ZTMyOTYyM2QzMDg0NWIyYWRjNWMxOTFjYzliMGExYWY5YThjOWI3NjdmYjJkNmJiZjc2NWE0MzA5YTZlMGZhYjgyMGI2MmU2MDVhZGYzODhlY2Y5LDIsMQ%3D%3D",
+      "link": "https://www.linkedin.com/comm/jobs/view/4452859875/?trackingId=jvwd1JeIQ%2BZLf%2B5oP6%2BE%2FA%3D%3D&amp;refId=8vN2VRlQi4Y%2BV4MVrKxAyw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BHHX3NCdXTmmmg%2FLL2WWIgg%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0V6Z-CepucwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4452859875_ssid_5047847097_fmid_9tg252~mt1dd4wn~uv&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_2_jobid_4452859875_ssid_5047847097_fmid_9tg252~mt1dd4wn~uv-null-9tg252~mt1dd4wn~uv-null-null&amp;eid=9tg252-mt1dd4wn-uv&amp;otpToken=N2NhODNiZGE1YTg3OTNjMDI1ZTVhMDZhMTM2NzU1ZTc0YzZmYzJjZTBkYjFjMDEyN2M5Y2Y2Njk5NDQ3Y2Y5NjU3NDNlMDA4ZTJiNjcyZmI5NDgzYzYxNGQ2NmY3ZmE1ODhkNTU3NTUwNmU2NDVlMTE5YTUxMGZhODYwNGE4NzQ2NTAwMjc1MzcwODBhOGIzLDIsMQ%3D%3D",
       "source": "LinkedIn",
-      "postedAt": "2026-08-17T10:20:15.000Z"
+      "postedAt": "2026-08-20T10:20:14.000Z"
+    },
+    {
+      "id": "e56b3c41df",
+      "status": "new",
+      "title": "Administrative Officer &amp; Front Desk Officer",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fadministrative-officer-front-desk-officer-grace-haven-school%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a01e6beb70-347400cc-385e-45cc-b865-a34ff7d1d2c9-000000/F1T_6SbUYRhzTeYGzwEXEj5p4MlhnyuSR0t1ZRJcTCo=452",
+      "source": "MyJobMag",
+      "postedAt": "2026-08-20T09:06:24.000Z"
     },
     {
       "id": "10e15c2ab8",
@@ -98,29 +78,29 @@
       "title": "Virtual assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/redir/alertview-from-letter/NUPIPFRSMNLYNCBNLHPBJ/0?ed=46249&amp;fm=1&amp;mid=7c54af1c-599c-41c3-9b9a-4886632a09f2&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc1ODc0MzAsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.KRPJ3HaTwhFmmtKcB-OvwPxc83hEoii3bpmRU_joyiI",
+      "link": "https://ng.jooble.org/redir/alertview-from-letter/NUPIPFRSMNLYNCBNLHPBJ/0?ed=46253&amp;fm=1&amp;mid=a7ca3827-d0dc-45d3-89ff-c2926a1c6640&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc4NzE5NTgsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.C764aUii8DMEGJyNLhbSGqBXW5vnVf7-4nEInpKjmMA",
       "source": "Jooble",
-      "postedAt": "2026-08-17T16:10:15.000Z"
+      "postedAt": "2026-08-20T23:10:00.000Z"
     },
     {
-      "id": "982633ec98",
+      "id": "cc82727f20",
       "status": "new",
-      "title": "Executive Assistant (Computer Literate)",
+      "title": "Customer Support Associate",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fexecutive-assistant-computer-literate-taas-college%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a00f66c728-29b2d265-f658-40a9-9291-05305d1eacdd-000000/g_L2dWaVG6r8qRZ7s4w7SDA6uNZceQ_Kyw1G0Mrn9FI=452",
-      "source": "MyJobMag",
-      "postedAt": "2026-08-17T11:06:29.000Z"
-    },
-    {
-      "id": "4d6d5918e6",
-      "status": "new",
-      "title": "Travel Customer Service Representative",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4451758727/?trackingId=6uSY7V43T4Pi6Kol3B8BAQ%3D%3D&amp;refId=TaM4afY5JFhxFk6Yr6nHyg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B2X77WremQKe%2BDZFC4vf3oQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=2MJISa0QeIsIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4451758727_ssid_5047847097_fmid_9tg252~msx31lbl~b3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_3_jobid_4451758727_ssid_5047847097_fmid_9tg252~msx31lbl~b3-null-9tg252~msx31lbl~b3-null-null&amp;eid=9tg252-msx31lbl-b3&amp;otpToken=ODgzMDhiNzk1NDBkYTk0NGQxY2I0OTlkMTg2ODcwMWE5NTNkNjA5OTFhNzJkMDRjMzA4OTVjMmZjNTQ0ZTMyOTYyM2QzMDg0NWIyYWRjNWMxOTFjYzliMGExYWY5YThjOWI3NjdmYjJkNmJiZjc2NWE0MzA5YTZlMGZhYjgyMGI2MmU2MDVhZGYzODhlY2Y5LDIsMQ%3D%3D",
+      "link": "https://www.linkedin.com/comm/jobs/view/4448888672/?trackingId=%2B%2F%2BxkJDqTTKNOvZzFyHJGw%3D%3D&amp;refId=VygUlsl4R0iNKhL2rFvpog%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_viewed_job_reminder_01%3BIwktftUSSNu%2F5hbtk2w5hQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0xD9OyL1ZkvYo1&amp;trk=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4448888672&amp;trkEmail=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4448888672-null-9tg252~mt0as95r~90-null-null&amp;eid=9tg252-mt0as95r-90&amp;otpToken=NmJkZTJmZmI4OTY4N2E5ZTJkOTYwZWU3NTE0MGRmNDg3NDc0MzJkODA4YjU1NzRlNDFlNTk1NWYyMDczMmM4MDY5ZDRlOWJjZjJmODZiMTUzMGRiYzUwMmExNjA2ODU0NmJiMmU3MjFhZTZmMTEzNjFhYjdhZGYzYjI2Y2M4NDA3Nzg1ZWZmNjExMTRlY2U5LDIsMQ%3D%3D",
       "source": "LinkedIn",
-      "postedAt": "2026-08-17T10:20:15.000Z"
+      "postedAt": "2026-08-19T16:20:13.000Z"
+    },
+    {
+      "id": "d9223ff326",
+      "status": "new",
+      "title": "Assistant Office Administrator",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fassistant-office-administrator-primetech-design-and-engineering%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a01e6beb70-347400cc-385e-45cc-b865-a34ff7d1d2c9-000000/pN_-lZNa7kmLedikoMlnCr8A2r7M3TW0lSho1c90f2w=452",
+      "source": "MyJobMag",
+      "postedAt": "2026-08-20T09:06:24.000Z"
     },
     {
       "id": "72d7ecc020",
@@ -128,29 +108,49 @@
       "title": "Executive assistant",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://ng.jooble.org/redir/alertview-from-letter/UTJTSVFMDOSFYBNNLHPBJ/0?ed=46249&amp;fm=1&amp;mid=7c54af1c-599c-41c3-9b9a-4886632a09f2&amp;letterType=71&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc1ODc0MzAsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.KRPJ3HaTwhFmmtKcB-OvwPxc83hEoii3bpmRU_joyiI",
+      "link": "https://ng.jooble.org/redir/alertview-from-letter/UTJTSVFMDOSFYBNNLHPBJ/0?ed=46253&amp;fm=1&amp;mid=a7ca3827-d0dc-45d3-89ff-c2926a1c6640&amp;letterType=1&amp;utm_source=letter&amp;utm_medium=email&amp;utm_campaign=subscribe&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEwOTY1NjciLCJleHAiOjE3ODc4NzE5NTgsImlzcyI6Imh0dHBzOi8vbmcuam9vYmxlLm9yZyJ9.C764aUii8DMEGJyNLhbSGqBXW5vnVf7-4nEInpKjmMA",
       "source": "Jooble",
-      "postedAt": "2026-08-17T16:10:15.000Z"
+      "postedAt": "2026-08-20T23:10:00.000Z"
     },
     {
-      "id": "9fe21a4ff0",
+      "id": "cc7060c14a",
       "status": "new",
-      "title": "Administrative Assistant Intern",
+      "title": "Customer Service and Support Associate",
       "company": "See listing",
       "location": "See listing",
-      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fadministrative-assistant-intern-i-train-africa%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/0101019ffa6d20de-52a3a818-89e7-4953-b61b-8a39b95fa8bb-000000/H1mf2q9qoiETRL_aLPgBcvUm5oRzhyhyvN4kVMHNo_4=452",
-      "source": "MyJobMag",
-      "postedAt": "2026-08-13T09:21:23.000Z"
-    },
-    {
-      "id": "527782346e",
-      "status": "new",
-      "title": "Travel Customer Support Representative",
-      "company": "See listing",
-      "location": "See listing",
-      "link": "https://www.linkedin.com/comm/jobs/view/4451772668/?trackingId=uai8cPldiUwpe39n3f0vKQ%3D%3D&amp;refId=TaM4afY5JFhxFk6Yr6nHyg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B2X77WremQKe%2BDZFC4vf3oQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=2MJISa0QeIsIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4451772668_ssid_5047847097_fmid_9tg252~msx31lbl~b3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-jobcard_body_4_jobid_4451772668_ssid_5047847097_fmid_9tg252~msx31lbl~b3-null-9tg252~msx31lbl~b3-null-null&amp;eid=9tg252-msx31lbl-b3&amp;otpToken=ODgzMDhiNzk1NDBkYTk0NGQxY2I0OTlkMTg2ODcwMWE5NTNkNjA5OTFhNzJkMDRjMzA4OTVjMmZjNTQ0ZTMyOTYyM2QzMDg0NWIyYWRjNWMxOTFjYzliMGExYWY5YThjOWI3NjdmYjJkNmJiZjc2NWE0MzA5YTZlMGZhYjgyMGI2MmU2MDVhZGYzODhlY2Y5LDIsMQ%3D%3D",
+      "link": "https://www.linkedin.com/comm/jobs/view/4454489245/?trackingId=Zd5S3LujT6WUH%2F9mOn5kcQ%3D%3D&amp;refId=v4IMCsNPT2%2B8EnV8K84%2BrA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_viewed_job_reminder_01%3BIwktftUSSNu%2F5hbtk2w5hQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0xD9OyL1ZkvYo1&amp;trk=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4454489245&amp;trkEmail=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4454489245-null-9tg252~mt0as95r~90-null-null&amp;eid=9tg252-mt0as95r-90&amp;otpToken=NmJkZTJmZmI4OTY4N2E5ZTJkOTYwZWU3NTE0MGRmNDg3NDc0MzJkODA4YjU1NzRlNDFlNTk1NWYyMDczMmM4MDY5ZDRlOWJjZjJmODZiMTUzMGRiYzUwMmExNjA2ODU0NmJiMmU3MjFhZTZmMTEzNjFhYjdhZGYzYjI2Y2M4NDA3Nzg1ZWZmNjExMTRlY2U5LDIsMQ%3D%3D",
       "source": "LinkedIn",
-      "postedAt": "2026-08-17T10:20:15.000Z"
+      "postedAt": "2026-08-19T16:20:13.000Z"
+    },
+    {
+      "id": "a512496dea",
+      "status": "new",
+      "title": "Administrative Officer",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://tracking.myjobmag.com/CL0/https:%2F%2Fwww.myjobmag.com%2Fjob%2Fadministrative-officer-ieis-education-group-limited%3Futm_source=email%26utm_medium=daily%26utm_campaign=dmail/1/010101a01e6beb70-347400cc-385e-45cc-b865-a34ff7d1d2c9-000000/ozPxJVZarrTbPuoSofKCxBM_aiLvJ9vr3AKPaNJIczs=452",
+      "source": "MyJobMag",
+      "postedAt": "2026-08-20T09:06:24.000Z"
+    },
+    {
+      "id": "c2c7ade52c",
+      "status": "new",
+      "title": "Customer Support",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://help.jooble.org/support/home",
+      "source": "Jooble",
+      "postedAt": "2026-08-20T23:10:00.000Z"
+    },
+    {
+      "id": "07fc2cac37",
+      "status": "new",
+      "title": "Customer Support Rep",
+      "company": "See listing",
+      "location": "See listing",
+      "link": "https://www.linkedin.com/comm/jobs/view/4452927238/?trackingId=bLT%2BCpwUSRqGwWpdD837IQ%3D%3D&amp;refId=rv0BRqBRSkWk7MkxPxAhlg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_viewed_job_reminder_01%3BIwktftUSSNu%2F5hbtk2w5hQ%3D%3D&amp;midToken=AQH98FdVJXJ3HQ&amp;midSig=0xD9OyL1ZkvYo1&amp;trk=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4452927238&amp;trkEmail=eml-email_jobs_viewed_job_reminder_01-job_card-0-jobcard_body_4452927238-null-9tg252~mt0as95r~90-null-null&amp;eid=9tg252-mt0as95r-90&amp;otpToken=NmJkZTJmZmI4OTY4N2E5ZTJkOTYwZWU3NTE0MGRmNDg3NDc0MzJkODA4YjU1NzRlNDFlNTk1NWYyMDczMmM4MDY5ZDRlOWJjZjJmODZiMTUzMGRiYzUwMmExNjA2ODU0NmJiMmU3MjFhZTZmMTEzNjFhYjdhZGYzYjI2Y2M4NDA3Nzg1ZWZmNjExMTRlY2U5LDIsMQ%3D%3D",
+      "source": "LinkedIn",
+      "postedAt": "2026-08-19T16:20:13.000Z"
     }
   ]
 }
