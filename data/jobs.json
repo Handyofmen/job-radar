@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T01:18:53.318Z",
+  "generatedAt": "2026-08-21T01:39:24.842Z",
   "count": 15,
   "jobs": [
     {
@@ -33,12 +33,12 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "157a6b54ef",
+      "id": "03a2247bc2",
       "status": "new",
       "title": "Administrative Assistant/Office Manager",
-      "company": "Mercer Advisors",
+      "company": "Partnership Development Group",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/625670851335982535",
+      "link": "https://jooble.org/jdp/-8653224018840906109",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -53,12 +53,12 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "03a2247bc2",
+      "id": "157a6b54ef",
       "status": "new",
       "title": "Administrative Assistant/Office Manager",
-      "company": "Partnership Development Group",
+      "company": "Mercer Advisors",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-8653224018840906109",
+      "link": "https://jooble.org/jdp/625670851335982535",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -133,22 +133,22 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "1cb32e6c9f",
-      "status": "new",
-      "title": "Executive Assistant/ Admin Assistant II",
-      "company": "Mindlance",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-2987296984307611702",
-      "source": "Jooble",
-      "postedAt": "2026-08-20T00:00:00.0000000"
-    },
-    {
       "id": "f1705559f3",
       "status": "new",
       "title": "Executive Admin Assistant",
       "company": "Cook Systems",
       "location": "Remote",
       "link": "https://jooble.org/jdp/1002059786362571817",
+      "source": "Jooble",
+      "postedAt": "2026-08-20T00:00:00.0000000"
+    },
+    {
+      "id": "a0bf014d1b",
+      "status": "new",
+      "title": "Executive Admin Assistant 3 - Korean/English bilingual",
+      "company": "Vtekis Consulting Llp",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-8177815715122230966",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     }
