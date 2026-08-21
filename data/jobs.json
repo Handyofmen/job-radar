@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T01:39:24.842Z",
+  "generatedAt": "2026-08-21T01:54:27.078Z",
   "count": 15,
   "jobs": [
     {
@@ -18,17 +18,17 @@
       "title": "Business Development and Admin Officer (Guam)",
       "company": "Planate Management Group",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/8113385075376128723",
+      "link": "https://jooble.org/jdp/-6830749798427856870",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "9b8f57d2b2",
+      "id": "38a1231220",
       "status": "new",
       "title": "Office Manager / Administrative Coordinator",
-      "company": "Sir Speedy #20030",
+      "company": "Sir Speedy, Inc.",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-9143198744220850806",
+      "link": "https://jooble.org/jdp/4379802216926535277",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -43,16 +43,6 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "b448c5e3c6",
-      "status": "new",
-      "title": "Administrative Assistant / Office Manager",
-      "company": "The Progeria Research Foundation",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/7717551065488144518",
-      "source": "Jooble",
-      "postedAt": "2026-08-20T00:00:00.0000000"
-    },
-    {
       "id": "157a6b54ef",
       "status": "new",
       "title": "Administrative Assistant/Office Manager",
@@ -63,12 +53,12 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "2f5cad5767",
+      "id": "b448c5e3c6",
       "status": "new",
-      "title": "Scheduler/Office Manager",
-      "company": "Advisacare",
+      "title": "Administrative Assistant / Office Manager",
+      "company": "The Progeria Research Foundation",
       "location": "Remote",
-      "link": "https://jooble.org/jdp/-2710018528600183200",
+      "link": "https://jooble.org/jdp/7717551065488144518",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -79,6 +69,16 @@
       "company": "Dayspring Services",
       "location": "Remote",
       "link": "https://jooble.org/jdp/4699152138020888540",
+      "source": "Jooble",
+      "postedAt": "2026-08-20T00:00:00.0000000"
+    },
+    {
+      "id": "2f5cad5767",
+      "status": "new",
+      "title": "Scheduler/Office Manager",
+      "company": "Advisacare",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/-2710018528600183200",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -103,22 +103,22 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
-      "id": "05ef98b792",
-      "status": "new",
-      "title": "Education & Engagement Office Administrator",
-      "company": "Milwaukee Repertory Theater",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/3028072599961382566",
-      "source": "Jooble",
-      "postedAt": "2026-08-20T00:00:00.0000000"
-    },
-    {
       "id": "67819999d0",
       "status": "new",
       "title": "School Office Administrator",
       "company": "St John Vianney Church And School",
       "location": "Remote",
       "link": "https://jooble.org/jdp/536136415069030557",
+      "source": "Jooble",
+      "postedAt": "2026-08-20T00:00:00.0000000"
+    },
+    {
+      "id": "05ef98b792",
+      "status": "new",
+      "title": "Education & Engagement Office Administrator",
+      "company": "Milwaukee Repertory Theater",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/3028072599961382566",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
@@ -133,22 +133,22 @@
       "postedAt": "2026-08-20T00:00:00.0000000"
     },
     {
+      "id": "2c57f34802",
+      "status": "new",
+      "title": "Sr. Executive Admin Assistant",
+      "company": "Fleet Farm Careers",
+      "location": "Remote",
+      "link": "https://jooble.org/jdp/39886990841404439",
+      "source": "Jooble",
+      "postedAt": "2026-08-20T00:00:00.0000000"
+    },
+    {
       "id": "f1705559f3",
       "status": "new",
       "title": "Executive Admin Assistant",
       "company": "Cook Systems",
       "location": "Remote",
       "link": "https://jooble.org/jdp/1002059786362571817",
-      "source": "Jooble",
-      "postedAt": "2026-08-20T00:00:00.0000000"
-    },
-    {
-      "id": "a0bf014d1b",
-      "status": "new",
-      "title": "Executive Admin Assistant 3 - Korean/English bilingual",
-      "company": "Vtekis Consulting Llp",
-      "location": "Remote",
-      "link": "https://jooble.org/jdp/-8177815715122230966",
       "source": "Jooble",
       "postedAt": "2026-08-20T00:00:00.0000000"
     }
