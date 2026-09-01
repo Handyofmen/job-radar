@@ -1,0 +1,139 @@
+import { google } from "googleapis";
+import { sources } from "./config-loader.js";
+
+const { clientId, clientSecret, refreshToken, processedLabel } = sources.gmail;
+
+// Andy's actual Gmail setup consolidates all job alerts under one label
+// ("Job Leads"), not separate labels per platform. Source is instead
+// identified by matching the sender's email domain.
+const JOB_LEADS_LABEL = "Job Leads";
+
+const SENDER_SOURCE_MAP = [
+  { match: "jobberman.com", source: "Jobberman" },
+  { match: "myjobmag.com", source: "MyJobMag" },
+  { match: "glassdoor.com", source: "Glassdoor" },
+  { match: "jooble.org", source: "Jooble" },
+  { match: "linkedin.com", source: "LinkedIn" },
+  { match: "jobalert.indeed.com", source: "Indeed" },
+  { match: "indeed.com", source: "Indeed" }
+];
+
+function detectSource(senderEmail) {
+  const lower = (senderEmail || "").toLowerCase();
+  const found = SENDER_SOURCE_MAP.find(entry => lower.includes(entry.match));
+  return found ? found.source : "Gmail";
+}
+
+function getGmailClient() {
+  const oAuth2Client = new google.auth.OAuth2(clientId, clientSecret);
+  oAuth2Client.setCredentials({ refresh_token: refreshToken });
+  return google.gmail({ version: "v1", auth: oAuth2Client });
+}
+
+async function ensureProcessedLabelId(gmail) {
+  const res = await gmail.users.labels.list({ userId: "me" });
+  const existing = res.data.labels.find(l => l.name === processedLabel);
+  if (existing) return existing.id;
+
+  const created = await gmail.users.labels.create({
+    userId: "me",
+    requestBody: { name: processedLabel, labelListVisibility: "labelShow", messageListVisibility: "show" }
+  });
+  return created.data.id;
+}
+
+// Recursively search all nested parts for the first matching leaf part —
+// Gmail messages are often nested (e.g. multipart/mixed containing a
+// multipart/alternative containing the real text/html), and a shallow
+// one-level check misses the actual content entirely.
+function findPartByMimeType(payload, mimeType) {
+  if (payload.mimeType === mimeType && payload.body?.data) {
+    return payload;
+  }
+  if (payload.parts) {
+    for (const part of payload.parts) {
+      const found = findPartByMimeType(part, mimeType);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
+function decodeBody(payload) {
+  const htmlPart = findPartByMimeType(payload, "text/html");
+  const targetPart = htmlPart || findPartByMimeType(payload, "text/plain");
+  const data = targetPart?.body?.data;
+  return data ? Buffer.from(data, "base64").toString("utf-8") : "";
+}
+
+function getHeader(headers, name) {
+  const header = (headers || []).find(h => h.name.toLowerCase() === name.toLowerCase());
+  return header ? header.value : "";
+}
+
+function parseJobsFromHtml(html, source) {
+  const jobs = [];
+  const linkPattern = /<a[^>]+href="([^"]+)"[^>]*>([^<]{5,120})<\/a>/g;
+  let match;
+  while ((match = linkPattern.exec(html)) !== null) {
+    const [, link, text] = match;
+    const looksLikeJobTitle = /officer|assistant|manager|coordinator|support|service|specialist|administrator/i.test(text);
+    if (looksLikeJobTitle) {
+      jobs.push({
+        title: text.trim(),
+        company: "See listing",
+        location: "See listing",
+        link,
+        source,
+        postedAt: null
+      });
+    }
+  }
+  return jobs;
+}
+
+export async function fetchAndParseGmailAlerts() {
+  if (!clientId) return [];
+
+  const gmail = getGmailClient();
+  const processedLabelId = await ensureProcessedLabelId(gmail);
+  const allJobs = [];
+
+  // Single real label, not one per platform — Gmail's query syntax uses
+  // hyphens in place of spaces for multi-word label names.
+  //
+  // FIX: removed "newer_than:3d" — this was silently excluding any backlog
+  // older than 3 days from ever being seen at all, regardless of Processed
+  // status. The Processed label already prevents duplicates on its own, so
+  // the date filter was redundant and actively harmful whenever there's a
+  // gap in running the tool (e.g. during last week's token expiry).
+  const labelQueryName = JOB_LEADS_LABEL.toLowerCase().replace(/\s+/g, "-");
+  const query = `label:${labelQueryName} -label:${processedLabel.toLowerCase()}`;
+
+  // Raised from 40 to 100 so a large backlog can clear over a few runs
+  // instead of trickling in extremely slowly.
+  const listRes = await gmail.users.messages.list({ userId: "me", q: query, maxResults: 100 });
+  const messages = listRes.data.messages || [];
+
+  for (const msg of messages) {
+    const full = await gmail.users.messages.get({ userId: "me", id: msg.id, format: "full" });
+    const sender = getHeader(full.data.payload.headers, "From");
+    const source = detectSource(sender);
+    const receivedDate = full.data.internalDate
+      ? new Date(Number(full.data.internalDate)).toISOString()
+      : null;
+
+    const html = decodeBody(full.data.payload);
+    const jobs = parseJobsFromHtml(html, source).map(job => ({ ...job, postedAt: receivedDate }));
+    allJobs.push(...jobs);
+
+    // Tag as processed — original "Job Leads" label is left untouched
+    await gmail.users.messages.modify({
+      userId: "me",
+      id: msg.id,
+      requestBody: { addLabelIds: [processedLabelId] }
+    });
+  }
+
+  return allJobs;
+}

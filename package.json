@@ -1,0 +1,16 @@
+{
+  "name": "job-radar",
+  "version": "1.0.0",
+  "description": "Daily filtered job feed for Andy — Admin/EA/Ops/Customer Service roles",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/run.js",
+    "renew-gmail-token": "node scripts/renew-gmail-token.js"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.0",
+    "libsodium-wrappers": "^0.7.16",
+    "node-fetch": "^3.3.2",
+    "open": "^11.0.0"
+  }
+}

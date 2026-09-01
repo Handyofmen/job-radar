@@ -1,0 +1,46 @@
+{
+  "includeTitles": [
+    "administrative officer",
+    "admin officer",
+    "administrative assistant",
+    "admin assistant",
+    "office administrator",
+    "administrative coordinator",
+    "office manager",
+    "executive assistant",
+    "personal assistant",
+    "virtual assistant",
+    "operations officer",
+    "operations coordinator",
+    "operations assistant",
+    "customer service",
+    "customer support",
+    "customer success",
+    "client support",
+    "client service"
+  ],
+  "excludeTitles": [
+    "developer",
+    "engineer",
+    "software",
+    "devops",
+    "data scientist",
+    "designer (ui/ux)",
+    "sales representative (commission only)",
+    "korean bilingual",
+    "mandarin bilingual",
+    "japanese bilingual",
+    "chinese bilingual",
+    "spanish bilingual",
+    "french bilingual",
+    "german bilingual",
+    "portuguese bilingual"
+  ],
+  "locationPreferences": {
+    "remote": true,
+    "cities": ["Lagos", "Nigeria"],
+    "arrangements": ["remote", "hybrid", "on-site"]
+  },
+  "maxResultsPerRun": 15,
+  "lookbackHours": 24
+}
