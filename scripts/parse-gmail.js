@@ -1,40 +1,141 @@
 import { google } from "googleapis";
+import * as cheerio from "cheerio";
 import { sources } from "./config-loader.js";
 
 const { clientId, clientSecret, refreshToken, processedLabel } = sources.gmail;
 
-// Andy's actual Gmail setup consolidates all job alerts under one label
-// ("Job Leads"), not separate labels per platform. Source is instead
-// identified by matching the sender's email domain.
-const JOB_LEADS_LABEL = "Job Leads";
+const SCAN_LABEL_NAME = "Job Leads";
 
-const SENDER_SOURCE_MAP = [
-  { match: "jobberman.com", source: "Jobberman" },
-  { match: "myjobmag.com", source: "MyJobMag" },
-  { match: "glassdoor.com", source: "Glassdoor" },
-  { match: "jooble.org", source: "Jooble" },
-  { match: "linkedin.com", source: "LinkedIn" },
-  { match: "jobalert.indeed.com", source: "Indeed" },
-  { match: "indeed.com", source: "Indeed" }
-];
+const SOURCE_SENDERS = {
+  linkedin: "jobalerts-noreply@linkedin.com",
+  indeed: "donotreply@jobalert.indeed.com",
+  glassdoor: "noreply@glassdoor.com",
+  jobberman: "support@jobberman.com",
+  myjobmag: "no_reply@myjobmag.com"
+};
 
-function detectSource(senderEmail) {
-  const lower = (senderEmail || "").toLowerCase();
-  const found = SENDER_SOURCE_MAP.find(entry => lower.includes(entry.match));
-  return found ? found.source : "Gmail";
+function decodeBase64Url(data) {
+  return Buffer.from(data, "base64url").toString("utf-8");
 }
 
-function getGmailClient() {
-  const oAuth2Client = new google.auth.OAuth2(clientId, clientSecret);
-  oAuth2Client.setCredentials({ refresh_token: refreshToken });
-  return google.gmail({ version: "v1", auth: oAuth2Client });
+function extractBodies(payload) {
+  let html = "";
+  let plain = "";
+  function walk(part) {
+    if (!part) return;
+    if (part.mimeType === "text/html" && part.body && part.body.data) {
+      html += decodeBase64Url(part.body.data);
+    } else if (part.mimeType === "text/plain" && part.body && part.body.data) {
+      plain += decodeBase64Url(part.body.data);
+    }
+    (part.parts || []).forEach(walk);
+  }
+  walk(payload);
+  return { html, plain };
+}
+
+function parseLinkedInPlainText(text) {
+  const jobs = [];
+  const blocks = text.split(/-{10,}/);
+  for (const block of blocks) {
+    const linkMatch = block.match(/View job:\s*(\S+)/i);
+    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
+    const contentLines = lines.filter(l =>
+      !/^view job:/i.test(l) && !/actively hiring/i.test(l)
+    );
+    if (contentLines.length >= 3) {
+      const [title, company, location] = contentLines;
+      jobs.push({ title, company, location, link: linkMatch ? linkMatch[1] : null, source: "LinkedIn" });
+    }
+  }
+  return jobs;
+}
+
+function parseIndeedPlainText(text) {
+  const jobs = [];
+  const lines = text.split("\n").map(l => l.trim());
+  for (let i = 0; i < lines.length; i++) {
+    const match = lines[i].match(/^(.+?)\s-\s(.+)$/);
+    if (match && lines[i - 1] && lines[i - 1].length > 0 && !lines[i - 1].includes(" - ")) {
+      let link = null;
+      for (let j = i + 1; j < Math.min(i + 6, lines.length); j++) {
+        if (/^https?:\/\//.test(lines[j])) { link = lines[j]; break; }
+      }
+      jobs.push({
+        title: lines[i - 1],
+        company: match[1].trim(),
+        location: match[2].trim(),
+        link,
+        source: "Indeed"
+      });
+    }
+  }
+  return jobs;
+}
+
+function parseGlassdoorHtml(html) {
+  const $ = cheerio.load(html);
+  const jobs = [];
+  $('a[href*="jobListing.htm"]').each((i, el) => {
+    const $el = $(el);
+    const spanTexts = $el.find("span").map((i, s) => $(s).text().trim()).get()
+      .filter(t => t && !/★/.test(t));
+    const company = spanTexts[0] || "Unknown";
+
+    const paragraphs = $el.find("p").map((i, p) => $(p).text().trim()).get()
+      .filter(t => t && t !== "Easy Apply" && !/^\d+d$/.test(t));
+    const title = paragraphs[0] || "";
+    const location = paragraphs[1] || "";
+
+    if (title) jobs.push({ title, company, location, link: $el.attr("href") || null, source: "Glassdoor" });
+  });
+  return jobs;
+}
+
+function parseJobbermanHtml(html) {
+  const $ = cheerio.load(html);
+  const jobs = [];
+  $("a.title").each((i, el) => {
+    const $el = $(el);
+    const title = $el.text().trim();
+    const $table = $el.closest("table");
+    const company = $table.find(".business_name").first().text().replace(/\u00a0/g, "").trim();
+    const location = $table.find(".listing_attribute").first().text().trim();
+    if (title) jobs.push({ title, company, location, link: $el.attr("href") || null, source: "Jobberman" });
+  });
+  return jobs;
+}
+
+function parseMyJobMagPlainText(text) {
+  const jobs = [];
+  const lines = text.split("\n").map(l => l.trim()).filter(l => l.startsWith("-"));
+  for (const line of lines) {
+    const match = line.match(/^-\s*(.+?)\s+at\s+(.+)$/i);
+    if (!match) continue;
+    let [, title, rest] = match;
+    const cityMatch = rest.match(/^(.+?)\s-\s(.+)$/);
+    const company = cityMatch ? cityMatch[1].trim() : rest.trim();
+    const location = cityMatch ? cityMatch[2].trim() : "";
+    jobs.push({ title: title.trim(), company, location, source: "MyJobMag" });
+  }
+  return jobs;
+}
+
+function parseBySender(senderEmail, bodies) {
+  const html = bodies.html;
+  const plain = bodies.plain;
+  if (senderEmail.includes(SOURCE_SENDERS.linkedin)) return parseLinkedInPlainText(plain);
+  if (senderEmail.includes(SOURCE_SENDERS.indeed)) return parseIndeedPlainText(plain);
+  if (senderEmail.includes(SOURCE_SENDERS.glassdoor)) return parseGlassdoorHtml(html);
+  if (senderEmail.includes(SOURCE_SENDERS.jobberman)) return parseJobbermanHtml(html);
+  if (senderEmail.includes(SOURCE_SENDERS.myjobmag)) return parseMyJobMagPlainText(plain);
+  return [];
 }
 
 async function ensureProcessedLabelId(gmail) {
   const res = await gmail.users.labels.list({ userId: "me" });
   const existing = res.data.labels.find(l => l.name === processedLabel);
   if (existing) return existing.id;
-
   const created = await gmail.users.labels.create({
     userId: "me",
     requestBody: { name: processedLabel, labelListVisibility: "labelShow", messageListVisibility: "show" }
@@ -42,95 +143,42 @@ async function ensureProcessedLabelId(gmail) {
   return created.data.id;
 }
 
-// Recursively search all nested parts for the first matching leaf part —
-// Gmail messages are often nested (e.g. multipart/mixed containing a
-// multipart/alternative containing the real text/html), and a shallow
-// one-level check misses the actual content entirely.
-function findPartByMimeType(payload, mimeType) {
-  if (payload.mimeType === mimeType && payload.body?.data) {
-    return payload;
-  }
-  if (payload.parts) {
-    for (const part of payload.parts) {
-      const found = findPartByMimeType(part, mimeType);
-      if (found) return found;
-    }
-  }
-  return null;
-}
-
-function decodeBody(payload) {
-  const htmlPart = findPartByMimeType(payload, "text/html");
-  const targetPart = htmlPart || findPartByMimeType(payload, "text/plain");
-  const data = targetPart?.body?.data;
-  return data ? Buffer.from(data, "base64").toString("utf-8") : "";
-}
-
-function getHeader(headers, name) {
-  const header = (headers || []).find(h => h.name.toLowerCase() === name.toLowerCase());
-  return header ? header.value : "";
-}
-
-function parseJobsFromHtml(html, source) {
-  const jobs = [];
-  const linkPattern = /<a[^>]+href="([^"]+)"[^>]*>([^<]{5,120})<\/a>/g;
-  let match;
-  while ((match = linkPattern.exec(html)) !== null) {
-    const [, link, text] = match;
-    const looksLikeJobTitle = /officer|assistant|manager|coordinator|support|service|specialist|administrator/i.test(text);
-    if (looksLikeJobTitle) {
-      jobs.push({
-        title: text.trim(),
-        company: "See listing",
-        location: "See listing",
-        link,
-        source,
-        postedAt: null
-      });
-    }
-  }
-  return jobs;
-}
-
 export async function fetchAndParseGmailAlerts() {
   if (!clientId) return [];
 
-  const gmail = getGmailClient();
+  const auth = new google.auth.OAuth2(clientId, clientSecret);
+  auth.setCredentials({ refresh_token: refreshToken });
+  const gmail = google.gmail({ version: "v1", auth });
+
   const processedLabelId = await ensureProcessedLabelId(gmail);
+
+  const listRes = await gmail.users.messages.list({
+    userId: "me",
+    q: `label:"${SCAN_LABEL_NAME}" -label:"${processedLabel}"`,
+    maxResults: 30
+  });
+
+  const messages = listRes.data.messages || [];
   const allJobs = [];
 
-  // Single real label, not one per platform — Gmail's query syntax uses
-  // hyphens in place of spaces for multi-word label names.
-  //
-  // FIX: removed "newer_than:3d" — this was silently excluding any backlog
-  // older than 3 days from ever being seen at all, regardless of Processed
-  // status. The Processed label already prevents duplicates on its own, so
-  // the date filter was redundant and actively harmful whenever there's a
-  // gap in running the tool (e.g. during last week's token expiry).
-  const labelQueryName = JOB_LEADS_LABEL.toLowerCase().replace(/\s+/g, "-");
-  const query = `label:${labelQueryName} -label:${processedLabel.toLowerCase()}`;
+  for (const m of messages) {
+    const msgRes = await gmail.users.messages.get({ userId: "me", id: m.id, format: "full" });
+    const headers = msgRes.data.payload.headers || [];
+    const fromHeaderObj = headers.find(h => h.name === "From");
+    const fromHeader = fromHeaderObj ? fromHeaderObj.value : "";
+    const dateHeaderObj = headers.find(h => h.name === "Date");
+    const dateHeader = dateHeaderObj ? dateHeaderObj.value : null;
 
-  // Raised from 40 to 100 so a large backlog can clear over a few runs
-  // instead of trickling in extremely slowly.
-  const listRes = await gmail.users.messages.list({ userId: "me", q: query, maxResults: 100 });
-  const messages = listRes.data.messages || [];
+    const bodies = extractBodies(msgRes.data.payload);
+    const parsedJobs = parseBySender(fromHeader, bodies).map(j => ({
+      ...j,
+      postedAt: dateHeader
+    }));
+    allJobs.push(...parsedJobs);
 
-  for (const msg of messages) {
-    const full = await gmail.users.messages.get({ userId: "me", id: msg.id, format: "full" });
-    const sender = getHeader(full.data.payload.headers, "From");
-    const source = detectSource(sender);
-    const receivedDate = full.data.internalDate
-      ? new Date(Number(full.data.internalDate)).toISOString()
-      : null;
-
-    const html = decodeBody(full.data.payload);
-    const jobs = parseJobsFromHtml(html, source).map(job => ({ ...job, postedAt: receivedDate }));
-    allJobs.push(...jobs);
-
-    // Tag as processed — original "Job Leads" label is left untouched
     await gmail.users.messages.modify({
       userId: "me",
-      id: msg.id,
+      id: m.id,
       requestBody: { addLabelIds: [processedLabelId] }
     });
   }

@@ -32,13 +32,14 @@ export function stableId(job) {
  * frontend rather than silently trusted or dropped.
  */
 function classify(job) {
-  const loc = (job.location || "").toLowerCase();
-  const isRemote = /remote/.test(loc);
+  const loc = (job.location || "").toLowerCase();  if (!loc && job.source === "MyJobMag") {
+    return { eligible: true, market: "nigeria", remoteConfidence: "unconfirmed" };
+  }
+  const isRemote = job.remote === true || /remote/.test(loc);
   const mentionsLagos = /lagos/.test(loc);
   const mentionsNigeria = /nigeria/.test(loc);
   const mentionsOtherCity = NON_LAGOS_NIGERIAN_CITIES.some(c => loc.includes(c));
   const lowConfidenceSource = job.source === "Jooble" || /gmail/i.test(job.source || "");
-
   if (mentionsOtherCity && !isRemote) {
     return { eligible: false };
   }
