@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-09-02T00:59:18.913Z",
+  "market": "international",
+  "count": 15,
+  "jobs": [
+    {
+      "id": "4ed4e7132f15213c",
+      "status": "new",
+      "title": "Support Services Representative",
+      "company": "Tyler Technologies",
+      "location": "Remote",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=373&guid=000001a0557618708ee0a9a3744d662c&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&ea=1&cs=1_e14ac41e&cb=1788306156188&jobListingId=1010246951198&jrtk=5-yul1-1-1k1flkqb2jcn5800-9ea58f793231d35e&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos1-age1d-1010246951198&rdforyou=true",
+      "source": "Glassdoor",
+      "postedAt": "Tue, 01 Sep 2026 23:42:36 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "01a9af197fce1507",
+      "status": "new",
+      "title": "Nurse Practitioner or Physician Assistant - Sign-On Bonus Available",
+      "company": "One Medical",
+      "location": "Berkeley, CA",
+      "link": "https://jooble.org/jdp/-6926830245906873287",
+      "source": "Jooble",
+      "postedAt": "2026-09-01T11:53:29.1083766+00:00",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "17fb2d03b4837feb",
+      "status": "new",
+      "title": "Programmatic Campaign Operations Specialist Trader",
+      "company": "VirtuHire",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-27T16:00:04+00:00",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "12890078906d43d3",
+      "status": "new",
+      "title": "Business Coach / Consultant, Exit Strategy (OR)",
+      "company": "Exit Factor",
+      "location": "Portland, OR",
+      "link": "https://jooble.org/jdp/-5469058325270853269",
+      "source": "Jooble",
+      "postedAt": "2026-09-01T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "2195c735a326548e",
+      "status": "new",
+      "title": "Oracle Fusion Cloud Lead â Logistics & Supply Chain Management",
+      "company": "Tessera Labs",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-oracle-fusion-cloud-lead-logistics-supply-chain-management-tessera-labs-1137155",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-27T00:00:17+00:00",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "19aafe0e6e23e5bd",
+      "status": "new",
+      "title": "Clinical Operations Manager (RN, NP, or PA)",
+      "company": "PrimaryMD",
+      "location": "New York, NY",
+      "link": "https://jooble.org/jdp/-7979434204378241113",
+      "source": "Jooble",
+      "postedAt": "2026-09-01T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "1775ebdaec2b7894",
+      "status": "new",
+      "title": "Course Director UX UI and AI",
+      "company": "Interaction Design Foundation",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-course-director-ux-ui-and-ai-interaction-design-foundation-1137139",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-26T12:44:41+00:00",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "49a8c5e445fc0b9f",
+      "status": "new",
+      "title": "RRT, CRT, or RN - Illinois (Springfield)",
+      "company": "Techlink Systems Inc.",
+      "location": "Springfield, IL",
+      "link": "https://jooble.org/desc/4156553014376472290",
+      "source": "Jooble",
+      "postedAt": "2026-08-31T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "ba0fba7b659855c8",
+      "status": "new",
+      "title": "Education Designer UX UI and AI",
+      "company": "Interaction Design Foundation",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-education-designer-ux-ui-and-ai-interaction-design-foundation-1137138",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-26T12:41:23+00:00",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "8b5158f83286e82a",
+      "status": "new",
+      "title": "Per Diem Family Nurse Practitioner or Physician Assistant (Casual Employee) - Pacific Heights",
+      "company": "One Medical",
+      "location": "San Francisco, CA",
+      "link": "https://jooble.org/jdp/-8931996667435757533",
+      "source": "Jooble",
+      "postedAt": "2026-08-28T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "5f0f6ae0d81a787c",
+      "status": "new",
+      "title": "Course Writer and Editor UX UI and AI",
+      "company": "Interaction Design Foundation",
+      "location": "Remote",
+      "link": "https://remoteOK.com/remote-jobs/remote-course-writer-and-editor-ux-ui-and-ai-interaction-design-foundation-1137136",
+      "source": "RemoteOK",
+      "postedAt": "2026-08-26T12:33:33+00:00",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "a043fabfad84ef52",
+      "status": "new",
+      "title": "Regional Account Manager, IgAN Nephrology, Portland, OR",
+      "company": "Unknown",
+      "location": "Portland, OR",
+      "link": "https://jooble.org/jdp/-5621188699439884578",
+      "source": "Jooble",
+      "postedAt": "2026-08-27T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "acabf96e73a80c7d",
+      "status": "new",
+      "title": "Director of Property & Casualty Insurance Services | Remote in OR",
+      "company": "Oregon Community Credit Union",
+      "location": "Eugene, OR",
+      "link": "https://jooble.org/jdp/2537473487989485973",
+      "source": "Jooble",
+      "postedAt": "2026-08-25T20:18:34.0700000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "7e724e84ad2fff18",
+      "status": "new",
+      "title": "Certified Nursing Assistant or Home Health Aide Caregiver",
+      "company": "Concierge Care- Amelia Island, FL",
+      "location": "Fernandina Beach, FL",
+      "link": "https://jooble.org/desc/7950801770048123654",
+      "source": "Jooble",
+      "postedAt": "2026-08-22T11:28:38.8370000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "77aa090e8fd82846",
+      "status": "new",
+      "title": "Health Services Director - RN or LPN",
+      "company": "Clearwater at South Bay",
+      "location": "Torrance, CA",
+      "link": "https://jooble.org/desc/7564756797475461647",
+      "source": "Jooble",
+      "postedAt": "2026-08-21T07:40:17.7570000",
+      "remoteConfidence": "unconfirmed"
+    }
+  ]
+}
