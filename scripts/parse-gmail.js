@@ -106,18 +106,18 @@ function parseJobbermanHtml(html) {
   return jobs;
 }
 
-function parseMyJobMagPlainText(text) {
+function parseMyJobMagHtml(html) {
+  const $ = cheerio.load(html);
   const jobs = [];
-  const lines = text.split("\n").map(l => l.trim()).filter(l => l.startsWith("-"));
-  for (const line of lines) {
-    const match = line.match(/^-\s*(.+?)\s+at\s+(.+)$/i);
-    if (!match) continue;
-    let [, title, rest] = match;
-    const cityMatch = rest.match(/^(.+?)\s-\s(.+)$/);
-    const company = cityMatch ? cityMatch[1].trim() : rest.trim();
-    const location = cityMatch ? cityMatch[2].trim() : "";
-    jobs.push({ title: title.trim(), company, location, source: "MyJobMag" });
-  }
+  $('a[href*="myjobmag.com/job"]').each((i, el) => {
+    const $el = $(el);
+    const title = $el.text().trim();
+    const link = $el.attr("href") ? $el.attr("href").split("?")[0] : null;
+    const company = $el.next("span").text().trim();
+    if (title && link) {
+      jobs.push({ title, company: company || "Unknown", location: "", link, source: "MyJobMag" });
+    }
+  });
   return jobs;
 }
 
@@ -128,7 +128,7 @@ function parseBySender(senderEmail, bodies) {
   if (senderEmail.includes(SOURCE_SENDERS.indeed)) return parseIndeedPlainText(plain);
   if (senderEmail.includes(SOURCE_SENDERS.glassdoor)) return parseGlassdoorHtml(html);
   if (senderEmail.includes(SOURCE_SENDERS.jobberman)) return parseJobbermanHtml(html);
-  if (senderEmail.includes(SOURCE_SENDERS.myjobmag)) return parseMyJobMagPlainText(plain);
+      if (senderEmail.includes(SOURCE_SENDERS.myjobmag)) return parseMyJobMagHtml(html);
   return [];
 }
 
