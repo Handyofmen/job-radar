@@ -1,6 +1,172 @@
 {
-  "generatedAt": "2026-09-19T04:39:47.179Z",
+  "generatedAt": "2026-09-19T05:03:34.430Z",
   "market": "nigeria",
-  "count": 0,
-  "jobs": []
+  "count": 15,
+  "jobs": [
+    {
+      "id": "e5bce076e043da47",
+      "status": "new",
+      "title": "Office/Administrative assistant",
+      "company": "Rosaam Ventures",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_3107f556&cb=1789740499536&jobListingId=1010264059928&jrtk=5-yul1-0-1k2qdhge52gdg000-028ad7feed2b848d&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age2d-1010264059928&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "2dcf2dc7280b0327",
+      "status": "new",
+      "title": "Personal Assistant & Chaffeur",
+      "company": "HillBridge Consulting",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=dabde458276e5f1e&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRus2vIpN0eFHOONZ-EoqaRm4l-DZkdfi2pqn4bWi-bAus&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2pnef85mnni800&alid=6a51a1de1cdeec736b12b7c2&bb=tQZfdZLI6RSxaFtdgkHOf5Gz_cQT6a93AArpQ0zo2YSGeucEWHg5xdAIpLV6ds3e9HAv8dqLgKaHqC9zVfJcciAc5ngBUPb9NRWQ3Qnjsk1J0X01NFihR7HfGcOzatU5Ngyfegg4nOGtdge1e88_bw%3D%3D&tmtk=1k2pnef85mnni800",
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "e219555a8069689f",
+      "status": "new",
+      "title": "Executive Assistant",
+      "company": "Foteino Talento",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_b4c5c404&cb=1789740499537&jobListingId=1010264060072&jrtk=5-yul1-0-1k2qdhge52gdg000-815e340ea73365cb&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age2d-1010264060072&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "813e56f5008da788",
+      "status": "new",
+      "title": "Account Reconcilation Officer",
+      "company": "Staffora Global",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=7d9d98d7d8cf5d30&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRus2vIpN0eFHOONZ-EoqaRm4l-DZkdfi2pqn4bWi-bAus&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k2pnef85mnni800&alid=6a51a1de1cdeec736b12b7c2&bb=7J9xfmvuYrAG-6VRy3vY361XUJzAXCiCB2CaTBc78IYJjIAHoaJg6Ff1779HhPHd30-Ef81kA8dWP0Lf7_WNnVnVfhQz3CL1atP57J0FdfM0XuR8fWORePPsIdWYRV1hfaamxE7jZnhJ5ujl_o4SdA%3D%3D&tmtk=1k2pnef85mnni800",
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "6aa39d96c59f9289",
+      "status": "new",
+      "title": "Executive Assistant",
+      "company": "Whip-Smart Services",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_25c6efc2&cb=1789740499537&jobListingId=1010263751913&jrtk=5-yul1-0-1k2qdhge52gdg000-8333f81ee71bd29f&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age3d-1010263751913&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "64be184b07f00b6a",
+      "status": "new",
+      "title": "Client Relations Executive",
+      "company": "The Baby Lounge",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=a0bef55d242d0fc2&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRus2vIpN0eFHOONZ-EoqaRm4l-DZkdfi2pqn4bWi-bAus&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2pnef85mnni800&alid=6a51a1de1cdeec736b12b7c2&bb=Z9ZfqtOaeV0aqzKhsRlL6ZiAs4PHB6OM5aiAtgjokxQgr8Z20Qo5kPrbHhKsu3rDgzgXFgrJmo2apx7ZTQN9Y4agDsg21xbGOl1m0Fer_jW1VvzU13ucKm2t97vSIt7EWm3brYpKTkAfQLMwszPPPA%3D%3D&tmtk=1k2pnef85mnni800",
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "566b8d5abff94933",
+      "status": "new",
+      "title": "Executive Assistant",
+      "company": "Goodnews Naija Podcast",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_44a18011&cb=1789740499537&jobListingId=1010262402952&jrtk=5-yul1-0-1k2qdhge52gdg000-4bdf16fa42908389&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age4d-1010262402952&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "4ed372bb027786bf",
+      "status": "new",
+      "title": "Sales Representative",
+      "company": "Kenedri Services",
+      "location": "Lagos",
+      "link": null,
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "3884f21b1e5400c7",
+      "status": "new",
+      "title": "Personal & Executive Assistant",
+      "company": "Rotic Aluminium Extrusion",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_9c9ff480&cb=1789740499537&jobListingId=1010263751989&jrtk=5-yul1-0-1k2qdhge52gdg000-af77b5ca7144126c&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age3d-1010263751989&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "8b5f79f3808d4392",
+      "status": "new",
+      "title": "Home Math $ Science Tutor",
+      "company": "El Roi Academy",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=0f0f9e0606ae0fe8&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRus2vIpN0eFHOONZ-EoqaRm4l-DZkdfi2pqn4bWi-bAus&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2pnef85mnni800&alid=6a51a1de1cdeec736b12b7c2&bb=s_QJlDwvteAQudJQRiRcFIwZdBzbQgUK01la-s7pPxKBF1IQ9eFv6sDAgkf3dvUk2Ii2fQ4LMU8_oVZlz5EyhKrK7vWKFuBNhlzQiSy8GUX65SWmsgDuIZ6D4mAUi0PP-UXsPw24gfMlLU-8Z1QHXQ%3D%3D&tmtk=1k2pnef85mnni800",
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "8ee7ff09d8d17650",
+      "status": "new",
+      "title": "Human Resource Assistant",
+      "company": "O.Peenice Adio Global Enterprise",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_1be610c0&cb=1789740499537&jobListingId=1010263751972&jrtk=5-yul1-0-1k2qdhge52gdg000-3c81cf04f22108f0&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age3d-1010263751972&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "ede6cd82955c1b8c",
+      "status": "new",
+      "title": "Housekeeper & Cook (domestic staff)",
+      "company": "Axiopistos consulting limited",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=ab515435a1cce74e&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRus2vIpN0eFHOONZ-EoqaRm4l-DZkdfi2pqn4bWi-bAus&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2pnef85mnni800&alid=6a51a1de1cdeec736b12b7c2&bb=Oz11Yuvzjftsv6722CoBF3JPgKBS4jBTLDH1ZYphJqFcR1uf76EaxMuEBleVuvtSEm-_u0EbAMzrBtFo7m89qBdl0mEd__Nwf3_JtUiy4MVS46AFLBptONrfRJ-HLcOvwi0CdQ9Gs59lnYxvLo4rjA%3D%3D&tmtk=1k2pnef85mnni800",
+      "source": "Indeed",
+      "postedAt": "Fri, 18 Sep 2026 07:42:25 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "3925c0e4c0bf5ed5",
+      "status": "new",
+      "title": "Front Desk Officer / Personal Assistant",
+      "company": "Golden Tintona Investment Holding",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=224&guid=000001a0b4ae7866b9634422c43368ae&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_4c00649d&cb=1789740499537&jobListingId=1010262465622&jrtk=5-yul1-0-1k2qdhge52gdg000-206b78f7f3286189&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-age4d-1010262465622&ja=417632563",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 14:08:20 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "6b003f652a8adf7b",
+      "status": "new",
+      "title": "Sales Representative",
+      "company": "Custodian Investment Plc",
+      "location": "Lagos",
+      "link": "https://ng.indeed.com/rc/clk/dl?jk=7aece54cf11e9051&from=ja&qd=RnZhMybXSk4M3QtTVGXWofzXa7Y6flp-cZVko9jHUxN3YxJipJZ3JSMbRj0WHQRurHFHLvzOOqoTb3jo8Dbnsj3QlcxRiO4YX6i0IQhZ-Xk&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k2n9iaormnni800&alid=6a51a1de1cdeec736b12b7c2&bb=m6XWjxy3zOhycO6Kpa7VAI4hDhBkYwOGH_NKYyfPyMuuplHnc0pyOd3zmAmlI_ER3-xa2ZqUVipUcdIGNQPHISq2PCKoJqv-Lww66sQyjPEl5kJmMuhZtYYnEcMWfKtzs9LyVgodrSdu2Syf96_wnw%3D%3D&tmtk=1k2n9iaormnni800",
+      "source": "Indeed",
+      "postedAt": "Thu, 17 Sep 2026 09:01:31 +0000",
+      "remoteConfidence": "confirmed"
+    },
+    {
+      "id": "06f32391fdcfd494",
+      "status": "new",
+      "title": "Admin & Office Operations Officer",
+      "company": "Maxitech",
+      "location": "Lagos",
+      "link": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=224&guid=000001a0b476d1e58733a49fd1c05e0c&src=GD_JOB_AD&t=JA&vt=e&uido=3911B0635DC97D2F0498FC6E228C3533&cs=1_58072f7c&cb=1789736011509&jobListingId=1010264151330&jrtk=5-yul1-0-1k2q98him2c30001-d338f71699b65e3a&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age2d-1010264151330&ja=416846133",
+      "source": "Glassdoor",
+      "postedAt": "Fri, 18 Sep 2026 12:53:32 +0000 (UTC)",
+      "remoteConfidence": "confirmed"
+    }
+  ]
 }
