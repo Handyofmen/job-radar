@@ -5,13 +5,14 @@ import { sources } from "./config-loader.js";
 const { clientId, clientSecret, refreshToken, processedLabel } = sources.gmail;
 
 const SCAN_LABEL_NAME = "Job Leads";
+const MAX_MESSAGES_PER_RUN = 150;
 
 const SOURCE_SENDERS = {
-  linkedin: "jobalerts-noreply@linkedin.com",
-  indeed: "donotreply@jobalert.indeed.com",
-  glassdoor: "noreply@glassdoor.com",
-  jobberman: "support@jobberman.com",
-  myjobmag: "no_reply@myjobmag.com"
+  linkedin: ["jobalerts-noreply@linkedin.com", "jobs-noreply@linkedin.com"],
+  indeed: ["donotreply@jobalert.indeed.com"],
+  glassdoor: ["noreply@glassdoor.com"],
+  jobberman: ["support@jobberman.com"],
+  myjobmag: ["no_reply@myjobmag.com"]
 };
 
 function decodeBase64Url(data) {
@@ -34,19 +35,17 @@ function extractBodies(payload) {
   return { html, plain };
 }
 
+// Anchored on the reliable "View job: <url>" line rather than splitting on
+// dashes — LinkedIn digests have boilerplate header text before the first
+// job block that a naive split would have misread as a real job entry.
 function parseLinkedInPlainText(text) {
   const jobs = [];
-  const blocks = text.split(/-{10,}/);
-  for (const block of blocks) {
-    const linkMatch = block.match(/View job:\s*(\S+)/i);
-    const lines = block.split("\n").map(l => l.trim()).filter(Boolean);
-    const contentLines = lines.filter(l =>
-      !/^view job:/i.test(l) && !/actively hiring/i.test(l)
-    );
-    if (contentLines.length >= 3) {
-      const [title, company, location] = contentLines;
-      jobs.push({ title, company, location, link: linkMatch ? linkMatch[1] : null, source: "LinkedIn" });
-    }
+  const regex = /([^\n]+)\n([^\n]+)\n([^\n]+)\n(?:Apply with resume & profile\n)?View job:\s*(\S+)/g;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    const [, title, company, location, link] = match;
+    if (/^(jobs that match|based on|see all jobs|this email was)/i.test(title)) continue;
+    jobs.push({ title: title.trim(), company: company.trim(), location: location.trim(), link, source: "LinkedIn" });
   }
   return jobs;
 }
@@ -124,11 +123,11 @@ function parseMyJobMagHtml(html) {
 function parseBySender(senderEmail, bodies) {
   const html = bodies.html;
   const plain = bodies.plain;
-  if (senderEmail.includes(SOURCE_SENDERS.linkedin)) return parseLinkedInPlainText(plain);
-  if (senderEmail.includes(SOURCE_SENDERS.indeed)) return parseIndeedPlainText(plain);
-  if (senderEmail.includes(SOURCE_SENDERS.glassdoor)) return parseGlassdoorHtml(html);
-  if (senderEmail.includes(SOURCE_SENDERS.jobberman)) return parseJobbermanHtml(html);
-      if (senderEmail.includes(SOURCE_SENDERS.myjobmag)) return parseMyJobMagHtml(html);
+  if (SOURCE_SENDERS.linkedin.some(s => senderEmail.includes(s))) return parseLinkedInPlainText(plain);
+  if (SOURCE_SENDERS.indeed.some(s => senderEmail.includes(s))) return parseIndeedPlainText(plain);
+  if (SOURCE_SENDERS.glassdoor.some(s => senderEmail.includes(s))) return parseGlassdoorHtml(html);
+  if (SOURCE_SENDERS.jobberman.some(s => senderEmail.includes(s))) return parseJobbermanHtml(html);
+  if (SOURCE_SENDERS.myjobmag.some(s => senderEmail.includes(s))) return parseMyJobMagHtml(html);
   return [];
 }
 
@@ -155,7 +154,7 @@ export async function fetchAndParseGmailAlerts() {
   const listRes = await gmail.users.messages.list({
     userId: "me",
     q: `label:"${SCAN_LABEL_NAME}" -label:"${processedLabel}"`,
-    maxResults: 30
+    maxResults: MAX_MESSAGES_PER_RUN
   });
 
   const messages = listRes.data.messages || [];
