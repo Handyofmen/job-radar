@@ -35,9 +35,6 @@ function extractBodies(payload) {
   return { html, plain };
 }
 
-// Anchored on the reliable "View job: <url>" line rather than splitting on
-// dashes — LinkedIn digests have boilerplate header text before the first
-// job block that a naive split would have misread as a real job entry.
 function parseLinkedInPlainText(text) {
   const jobs = [];
   const regex = /([^\n]+)\n([^\n]+)\n([^\n]+)\n(?:Apply with resume & profile\n)?View job:\s*(\S+)/g;
@@ -142,6 +139,10 @@ async function ensureProcessedLabelId(gmail) {
   return created.data.id;
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export async function fetchAndParseGmailAlerts() {
   if (!clientId) return [];
 
@@ -161,25 +162,32 @@ export async function fetchAndParseGmailAlerts() {
   const allJobs = [];
 
   for (const m of messages) {
-    const msgRes = await gmail.users.messages.get({ userId: "me", id: m.id, format: "full" });
-    const headers = msgRes.data.payload.headers || [];
-    const fromHeaderObj = headers.find(h => h.name === "From");
-    const fromHeader = fromHeaderObj ? fromHeaderObj.value : "";
-    const dateHeaderObj = headers.find(h => h.name === "Date");
-    const dateHeader = dateHeaderObj ? dateHeaderObj.value : null;
+    try {
+      const msgRes = await gmail.users.messages.get({ userId: "me", id: m.id, format: "full" });
+      const headers = msgRes.data.payload.headers || [];
+      const fromHeaderObj = headers.find(h => h.name === "From");
+      const fromHeader = fromHeaderObj ? fromHeaderObj.value : "";
+      const dateHeaderObj = headers.find(h => h.name === "Date");
+      const dateHeader = dateHeaderObj ? dateHeaderObj.value : null;
 
-    const bodies = extractBodies(msgRes.data.payload);
-    const parsedJobs = parseBySender(fromHeader, bodies).map(j => ({
-      ...j,
-      postedAt: dateHeader
-    }));
-    allJobs.push(...parsedJobs);
+      const bodies = extractBodies(msgRes.data.payload);
+      const parsedJobs = parseBySender(fromHeader, bodies).map(j => ({
+        ...j,
+        postedAt: dateHeader
+      }));
+      allJobs.push(...parsedJobs);
 
-    await gmail.users.messages.modify({
-      userId: "me",
-      id: m.id,
-      requestBody: { addLabelIds: [processedLabelId] }
-    });
+      await gmail.users.messages.modify({
+        userId: "me",
+        id: m.id,
+        requestBody: { addLabelIds: [processedLabelId] }
+      });
+
+      await sleep(400);
+    } catch (err) {
+      console.error(`Stopped Gmail processing early at message ${m.id}: ${err.message}`);
+      break;
+    }
   }
 
   return allJobs;
