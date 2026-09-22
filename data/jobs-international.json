@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-09-21T11:59:55.789Z",
+  "generatedAt": "2026-09-22T11:11:14.159Z",
   "market": "international",
-  "count": 0,
-  "jobs": []
+  "count": 4,
+  "jobs": [
+    {
+      "id": "cc5eb4309f74662f",
+      "status": "new",
+      "title": "Physician Assistant or Nurse Practitioner PRN",
+      "company": "Concentra",
+      "location": "Santa Fe, NM",
+      "link": "https://jooble.org/jdp/3493252174583745279",
+      "source": "Jooble",
+      "postedAt": "2026-09-21T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "eb0f5a93247ff123",
+      "status": "new",
+      "title": "Registered Nurse OR Service Line Lead Ortho Trauma",
+      "company": "HCA HealthOne",
+      "location": "Englewood, CO",
+      "link": "https://jooble.org/jdp/3786605212558016229",
+      "source": "Jooble",
+      "postedAt": "2026-09-21T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "81c515c6dcaab26b",
+      "status": "new",
+      "title": "Commercial Service Technician- Eugene, OR",
+      "company": "PILOT",
+      "location": "Eugene, OR",
+      "link": "https://jooble.org/jdp/1911615335282328351",
+      "source": "Jooble",
+      "postedAt": "2026-09-18T23:30:32.8630000",
+      "remoteConfidence": "unconfirmed"
+    },
+    {
+      "id": "c4e1216792d1ceb6",
+      "status": "new",
+      "title": "Physician Assistant or Nurse Practitioner",
+      "company": "RiverStone Health",
+      "location": "Billings, MT",
+      "link": "https://jooble.org/jdp/863062593472678354",
+      "source": "Jooble",
+      "postedAt": "2026-09-18T00:00:00.0000000",
+      "remoteConfidence": "unconfirmed"
+    }
+  ]
 }
